@@ -1,26 +1,23 @@
 /*base styles*/
 * {
   margin: 0;
-  background-color: black;
   color: white;
   font-family:'georgia', serif
 }
 
 /*navbar*/
 .navbar {
-  padding: 30px 50px;
+  padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /*background-color: grey;*/
+  background-color: black;
 }
-
 .navbar img {
   max-height: 50px;
   background-color: white;
   border-radius: 50px;
 }
-
 .navbar a {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -29,7 +26,24 @@
   padding: 0px 20px;
   transition: 0.3s ease-in-out;
 }
-
 .navbar a:hover {
   color: gray;
 }
+
+/*title*/
+.gif {
+  background-image: url('./images/backgroundgif.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+  padding-top: 300px;
+  padding-left: 150px;
+}
+.title {
+  font-size: 80px;
+}
+.subtitle {
+  font-size: 60px;
+}
+
+
