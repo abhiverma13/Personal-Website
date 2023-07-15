@@ -1,13 +1,7 @@
-/*base styles*/
-* {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family:'georgia', serif
-}
-
-/*navbar*/
-.navbar-home{
+.navbar{
+  background-image: url('./images/backgroundgif.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
@@ -16,7 +10,7 @@
   position: sticky; 
   top: 0;
 }
-.navbar-home-fixed{
+.navbar-fixed{
   padding: 10px 50px;
   display: flex;
   justify-content: space-between;
@@ -38,30 +32,9 @@ a {
   padding: 0px 20px;
   transition: 0.3s ease-in-out;
 }
-.links a:hover {
+a:hover {
   color: gray;
 }
-.active {
-  text-decoration: underline;
-  text-decoration-thickness: 5px;
+#home {
+  text-decoration: none;
 }
-
-/*title*/
-.first-section {
-  background-image: url('./images/backgroundgif.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-}
-.gif {
-  height: 700px;
-  padding-top: 300px;
-  padding-left: 150px;
-}
-.title {
-  font-size: 80px;
-}
-.subtitle {
-  font-size: 60px;
-}
-
-
