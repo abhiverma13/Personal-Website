@@ -38,6 +38,7 @@ nav a {
 }
 .active {
   text-decoration: underline 5px;
+  color: #D9A785
 }
 
 /*title*/
@@ -58,29 +59,43 @@ nav a {
   padding-bottom: 10px;
   padding-left: 10px;
 }
+.title b {
+  color: #F8D5BA
+}
 .subtitle {
   font-size: 60px;
   background: rgba(0, 0, 0, .5);
   padding-left: 10px;
   padding-bottom: 10px;
 }
+.subtitle b {
+  color: #FEC8D8
+}
 
 /*skills*/
 .skills {
-  background-color: black;
+  background-image: url('./images/starbackground.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 .iam {
   text-align: center;
   font-size: 50px;
   font-weight: bold;
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px;
+  margin-left: 500px;
+  margin-right: 500px;
+  background-color: black;
 }
 .skills-table {
+  background-color: black;
   margin-left: auto;
   margin-right: auto;
   width: 80%;
   text-align: center;
+  border-radius: 5px;
+  padding-top: 20px;
+  padding-bottom: 50px;
 }
 .skills-table th {
   font-size: 30px;
@@ -89,5 +104,12 @@ nav a {
 .skills-table p {
   font-size: 20px;
   padding: 0 40px;
+}
+.parallax1 {
+  height: 300px;
+}
+.about-me {
+  background-color: black;
+  height: 500px;
 }
 

@@ -4,12 +4,14 @@ import logo from './images/logo.png';
 import learner from './images/learner.png'
 import solver from './images/solver.png';
 import leader from './images/leader.png';
+import { Parallax } from 'react-parallax';
+import space1 from './images/space1.jpg'
 
 const Home = () => {
   const [fix, setFix] = useState(false);
 
   function setFixed() {
-    if (window.scrollY >= 200) {
+    if (window.scrollY >= 280) {
       setFix(true);
     }
     else {
@@ -60,6 +62,11 @@ const Home = () => {
           </tr>
         </table>
       </div>
+      <Parallax className="parallax1" strength={600} bgImage={space1} />
+      <div className="about-me">
+        <p>About me</p>
+      </div>
+      <Parallax className="parallax1" strength={600} bgImage={space1} />
     </div>
   );
 }
