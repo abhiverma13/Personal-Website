@@ -11,7 +11,7 @@ const Home = () => {
   const [fix, setFix] = useState(false);
 
   function setFixed() {
-    if (window.scrollY >= 280) {
+    if (window.scrollY > 0) {
       setFix(true);
     }
     else {
@@ -27,16 +27,16 @@ const Home = () => {
 
   return (
     <div className="home">
+      <nav className={fix ? "navbar-home-fixed" : "navbar-home"}>
+        <NavLink to="/"><img src={logo} alt='logo'/></NavLink>
+        <div className="links">
+          <NavLink to="/">HOME</NavLink>
+          <NavLink to="/myprojects">MY PROJECTS</NavLink>
+          <NavLink to="/experience">EXPERIENCE</NavLink>
+          <NavLink to="/contactme">CONTACT ME</NavLink>
+        </div>
+      </nav>
       <div className="first-section">
-        <nav className={fix ? "navbar-home-fixed" : "navbar-home"}>
-          <NavLink to="/"><img src={logo} alt='logo'/></NavLink>
-          <div className="links">
-            <NavLink to="/">HOME</NavLink>
-            <NavLink to="/myprojects">MY PROJECTS</NavLink>
-            <NavLink to="/experience">EXPERIENCE</NavLink>
-            <NavLink to="/contactme">CONTACT ME</NavLink>
-          </div>
-        </nav>
         <div className="gif">
         <p className="title">I am <b>Abhi Verma</b>.</p>
         <p className="subtitle">An aspiring <b>Computer Engineer</b>.</p>

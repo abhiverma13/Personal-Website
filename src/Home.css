@@ -6,15 +6,24 @@
   font-family:'georgia', serif
 }
 
+.home {
+  transform-style: preserve-3d;
+  perspective: 10px;
+}
+
 /*navbar*/
 .navbar-home{
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
+  background-color: black;
+  background-image: url('./images/backgroundgif.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
   position: sticky; 
   top: 0;
+  transition: all 250ms ease-in-out;
 }
 .navbar-home-fixed{
   padding: 10px 50px;
@@ -22,8 +31,10 @@
   justify-content: space-between;
   align-items: center;
   background-color: black;
-  position: sticky; 
+  position: sticky;
   top: 0;
+  transition: all 250ms ease-in;
+  z-index: 100;
 }
 nav a {
   font-family: Arial, Helvetica, sans-serif;
@@ -33,7 +44,7 @@ nav a {
   padding: 0px 20px;
   transition: 0.3s ease-in-out;
 }
-.links a:hover {
+a:hover {
   color: gray;
 }
 .active {
@@ -46,6 +57,7 @@ nav a {
   background-image: url('./images/backgroundgif.gif');
   background-size: cover;
   background-repeat: no-repeat;
+  background-position-y:-94px
 }
 .gif {
   height: 700px;
@@ -58,6 +70,8 @@ nav a {
   background: rgba(0, 0, 0, .5);
   padding-bottom: 10px;
   padding-left: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .title b {
   color: #F8D5BA
@@ -67,6 +81,8 @@ nav a {
   background: rgba(0, 0, 0, .5);
   padding-left: 10px;
   padding-bottom: 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .subtitle b {
   color: #FEC8D8
@@ -95,7 +111,7 @@ nav a {
   text-align: center;
   border-radius: 5px;
   padding-top: 20px;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 .skills-table th {
   font-size: 30px;
@@ -105,8 +121,12 @@ nav a {
   font-size: 20px;
   padding: 0 40px;
 }
+
+/*about me*/
 .parallax1 {
   height: 300px;
+  z-index: -100;
+  background-color: black;
 }
 .about-me {
   background-color: black;

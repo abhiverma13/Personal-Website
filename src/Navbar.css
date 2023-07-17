@@ -35,6 +35,9 @@ nav a {
 a:hover {
   color: gray;
 }
+#home:hover {
+  color: gray;
+}
 #home {
   text-decoration: none;
   color: white;
