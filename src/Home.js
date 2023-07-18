@@ -5,7 +5,8 @@ import learner from './images/learner.png'
 import solver from './images/solver.png';
 import leader from './images/leader.png';
 import { Parallax } from 'react-parallax';
-import space1 from './images/space1.jpg'
+import space1 from './images/space1.jpg';
+import myimage from './images/myimage.jpg';
 
 const Home = () => {
   const [fix, setFix] = useState(false);
@@ -64,9 +65,26 @@ const Home = () => {
       </div>
       <Parallax className="parallax1" strength={600} bgImage={space1} />
       <div className="about-me">
-        <p>About me</p>
+        <div className="about-me-content">
+          <div className="my-image">
+            <img src={myimage} alt="myimage" />
+          </div>
+          <div className="about-me-text">
+            <h1>A Little About <br /> Myself.</h1>
+            <p>As an engineering student at UBC, I strive to be a well-rounded, innovative individual who is always open to learning and prepared to face difficult challenges head on. Balancing a variety of extracurriculars while achieving academic excellence has made me eager to try new experiences and taught me to manage my time wisely. Some of my hobbies include programming, volunteering in my community, and working out. <br /> <br /> My love for coding started with Waterloo’s CS Circles tutorials on Python and since then it has become my passion. To further fuel this passion, I took Computer Science throughout high school and eventually became a TA for the course. Currently I am in UBC Launch Pad, a software design team that works in teams to build innovative apps. As technology becomes increasingly essential to the world, we bear a heightened responsibility to develop solutions that are environmentally sustainable and user-friendly. My aspiration is to utilize technology to enhance the well-being of humanity, with the intention of creating a legacy that yields a positive, lasting influence on society.</p>
+          </div>
+        </div>
+        <a href="https://abhi-verma.weebly.com/uploads/1/4/4/0/144003627/abhi_vermas_resume.pdf"><button>MY RESUME</button></a>
       </div>
       <Parallax className="parallax1" strength={600} bgImage={space1} />
+      <div className="quote">
+        <div className="quote-text">
+          <p>"Don't tell me sky's the limit <br /> ​when there are footprints on the moon.”</p>
+        </div>
+        <div className="quote-author">
+          <p>-Paul Brandt</p>
+        </div>
+      </div>
     </div>
   );
 }

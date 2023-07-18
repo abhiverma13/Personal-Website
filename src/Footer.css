@@ -1,0 +1,35 @@
+footer {
+  background-color: black;
+}
+.footer-container {
+  padding: 70px 30px 20px;
+  text-align: center;
+}
+.social-icons {
+  display: flex;
+  justify-content: center;
+}
+.social-icons a {
+  text-decoration: none;
+  padding: 5px;
+  background-color: white;
+  margin: 10px;
+  border-radius: 50%;
+}
+.social-icons a i {
+  font-size: 1.5em;
+  color: black;
+  opacity: 0.9;
+}
+.social-icons a:hover {
+  background-color: #111;
+  transition: 0.5s;
+}
+.social-icons a i:hover {
+  color: white;
+  transition: 0.5s;
+}
+.footer-bottom {
+  padding-top: 20px;
+  font-size: 15px;
+}
