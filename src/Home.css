@@ -93,33 +93,56 @@ a:hover {
   background-image: url('./images/starbackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
+  height: 900px;
 }
-.iam {
+.skills-heading {
+  font-size: 40px;
   text-align: center;
-  font-size: 50px;
-  font-weight: bold;
-  padding: 80px;
-  margin-left: 500px;
-  margin-right: 500px;
+  padding-top: 60px;
+  padding-bottom: 35px;
+  margin-left: 600px;
+  margin-right: 600px;
   background-color: black;
 }
 .skills-table {
   background-color: black;
-  margin-left: auto;
-  margin-right: auto;
-  width: 80%;
+  float: left;
+  width: 42%;
   text-align: center;
-  border-radius: 5px;
-  padding-top: 20px;
-  padding-bottom: 80px;
+  padding: 50px 0;
+  margin-left: 110px;
 }
-.skills-table th {
-  font-size: 30px;
-  padding: 30px 20px
+.skills-table caption {
+  background-color: black;
+  padding-top: 40px;
 }
-.skills-table p {
-  font-size: 20px;
-  padding: 0 40px;
+.skills-table img {
+  max-height: 80px;
+  padding-top: 40px;
+}
+.skills-subtitle h3{
+  font-size: 15px;
+  color: gray;
+}
+.skills-title h3{
+  padding-top: 10px;
+}
+
+.skills-table2 {
+  background-color: black;
+  float: right;
+  width: 43%;
+  text-align: center;
+  padding: 50px 0;
+  margin-right: 110px;
+}
+.skills-table2 caption {
+  background-color: black;
+  padding-top: 40px;
+}
+.skills-table2 img {
+  max-height: 80px;
+  padding-top: 40px;
 }
 
 /*about me*/
@@ -201,3 +224,5 @@ a:hover {
   margin-right: 300px;
   margin-left: 300px;
 }
+
+/*skills*/
