@@ -6,7 +6,7 @@ const Navbar = () => {
   const [fix, setFix] = useState(false);
 
   function setFixed() {
-    if (window.scrollY >= 200) {
+    if (window.scrollY > 0) {
       setFix(true);
     }
     else {

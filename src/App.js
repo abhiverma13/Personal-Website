@@ -6,12 +6,14 @@ import Experience from './Experience';
 import ContactMe from './ContactMe';
 import NotFound from './NotFound';
 import Footer from './Footer';
+import ScrollToTop from './ScrollToTop'
 
 function App() {
   return (
     <Router>
       <div className="App">
         <div className="content">
+          <ScrollToTop />
           <Switch>
             <Route exact path="/">
               <Home />

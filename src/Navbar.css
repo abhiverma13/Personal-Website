@@ -1,14 +1,16 @@
 .navbar{
+  background-color: black;
   background-image: url('./images/starbackground.jpg');
+  background-position-y: -130px;
   background-size: cover;
   background-repeat: no-repeat;
   padding: 20px 50px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: transparent;
   position: sticky; 
   top: 0;
+  transition: all 800ms ease-in-out;
 }
 .navbar-fixed{
   padding: 10px 50px;
@@ -18,6 +20,8 @@
   background-color: black;
   position: sticky; 
   top: 0;
+  transition: all 250ms ease-in;
+  z-index: 100;
 }
 nav img {
   max-height: 50px;
