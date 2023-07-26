@@ -4,6 +4,8 @@ import './Home.css';
 import './Navbar.css';
 import './Footer.css';
 import './MyProjects.css';
+import './Experience.css';
+import './ContactMe.css';
 import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

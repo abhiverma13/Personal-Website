@@ -1,0 +1,85 @@
+.contactme {
+  padding: 100px 0;
+  background-color: black;
+  color: white;
+  background-image: url('./images/starbackground.jpg');
+  background-position-y: -130px;
+  background-size: contain;
+  display: flex;
+  justify-content: center;
+}
+.getintouch {
+  background-color: black;
+  padding: 30px 50px;
+  width: 350px;
+  margin-right: 100px;
+  margin-bottom: auto;
+}
+.getintouch h1 {
+  font-size: 50px;
+  color: rgb(160, 160, 160);
+}
+.getintouch p {
+  padding-top: 40px;
+  font-size: 22px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.form {
+  background-color: black;
+  margin-right: 200px;
+  padding: 20px 50px;
+}
+.form input {
+  background-color: black;
+}
+.formsection input {
+  width: 300px;
+  font-size: 15px;
+  padding: 10px 0;
+  border: 2px solid gray;
+  border-radius: 4px;
+}
+.form label {
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.formlabel {
+  padding-top: 20px;
+  padding-bottom: 5px;
+}
+.submitsection {
+  text-align: center;
+  margin-top: 30px;
+}
+.submit {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  font-size: 15px;
+  border: 2px solid white;
+  padding: 12px 25px;
+  cursor: pointer;
+}
+.submit:hover {
+  cursor: pointer;
+  background-color: #212121;
+  transition: 0.5s;
+}
+.form textarea {
+  background-color: black;
+  resize: horizontal;
+  max-width: 600px;
+  min-width: 300px;
+  height: 150px;
+  padding: 5px 0;
+  border: 2px solid gray;
+  border-radius: 4px;
+  font-size: 15px;
+}
+.placeholder {
+  visibility: hidden;
+}
+.error{
+  color: red;
+  background-color: black;
+  font-size: 15px;
+}
