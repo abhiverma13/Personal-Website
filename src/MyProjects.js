@@ -24,8 +24,8 @@ const MyProjects = () => {
       </div>
       <ProjectLeft className="epilog" 
       title= "EpiLog"
-      description="EpiLog is a mobile health app designed to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend aspect of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
-      instructions="Clicking on the logo to the right will take you to UBC Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
+      description="EpiLog is a mobile health app designed by UBC Launch Pad to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
+      instructions="Clicking on the logo to the right will take you to Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
       image={epilog}
       link="https://github.com/ubclaunchpad">
       </ProjectLeft>
@@ -51,7 +51,7 @@ const MyProjects = () => {
       description="EpiLog is a mobile health app designed to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend aspect of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
       instructions="Clicking on the logo to the right will take you to UBC Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
       image={monsterrpggame}
-      link="https://movie-app-frontend.averma1304.repl.co/index.html">
+      link="https://replit.com/@averma1304/Monster-RPG-Game?v=1">
       </ProjectRight>
       <hr />
       <ProjectLeft className="ponggame" 

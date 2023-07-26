@@ -23,7 +23,8 @@ hr{
   font-weight: bold;
 }
 .my-projects-heading a:hover {
-  color: gray
+  color: gray;
+  transition: 0.5s;
 }
 
 /*project left*/
