@@ -1,61 +1,11 @@
-/*base styles*/
-* {
-  margin: 0;
-  padding: 0;
-  color: white;
-  font-family:'georgia', serif
-}
-
-/*navbar*/
-.navbar-home{
-  padding: 20px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  background-image: url('./images/backgroundgif.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  position: sticky; 
-  top: 0;
-  transition: all 250ms ease-in-out;
-}
-.navbar-home-fixed{
-  padding: 10px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: black;
-  position: sticky;
-  top: 0;
-  transition: all 250ms ease-in;
-  z-index: 100;
-}
-nav a {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
-  font-size: 15px;
-  text-decoration: none;
-  padding: 0px 20px;
-  transition: 0.3s ease-in-out;
-}
-a:hover {
-  color: gray;
-}
-.active {
-  text-decoration: underline 5px;
-  color: #D9A785
-}
-
 /*title*/
-.first-section {
+.introduction {
   background-image: url('./images/backgroundgif.gif');
   background-size: cover;
   background-repeat: no-repeat;
-  background-position-y:-94px
 }
 .gif {
-  height: 700px;
+  height: 900px;
   padding-top: 280px;
   padding-left: 150px;
   padding-right: 400px;

@@ -1,6 +1,4 @@
-import { useEffect, useState } from 'react';
-import { NavLink } from 'react-router-dom';
-import logo from './images/logo.png';
+import { useEffect } from 'react';
 import { Parallax } from 'react-parallax';
 import space1 from './images/space1.jpg';
 import myimage from './images/myimage.jpg';
@@ -20,18 +18,6 @@ import solver from './images/solver.png';
 import leader from './images/leader.png';
 
 const Home = () => {
-  const [fix, setFix] = useState(false);
-
-  function setFixed() {
-    if (window.scrollY > 0) {
-      setFix(true);
-    }
-    else {
-      setFix(false);
-    }
-  }
-
-  window.addEventListener("scroll", setFixed);
 
   useEffect(() => {
     document.title = "Abhi Verma - Home";
@@ -39,19 +25,10 @@ const Home = () => {
 
   return (
     <div className="home">
-      <nav className={fix ? "navbar-home-fixed" : "navbar-home"}>
-        <NavLink to="/"><img src={logo} alt='logo'/></NavLink>
-        <div className="links">
-          <NavLink to="/">HOME</NavLink>
-          <NavLink to="/myprojects">MY PROJECTS</NavLink>
-          <NavLink to="/experience">EXPERIENCE</NavLink>
-          <NavLink to="/contactme">CONTACT ME</NavLink>
-        </div>
-      </nav>
-      <div className="first-section">
+      <div className="introduction">
         <div className="gif">
-        <p className="title">I am <b>Abhi Verma</b>.</p>
-        <p className="subtitle">An aspiring <b>Computer Engineer</b>.</p>
+          <p className="title">I am <b>Abhi Verma</b>.</p>
+          <p className="subtitle">An aspiring <b>Computer Engineer</b>.</p>
         </div>
       </div>
       <section className="skills">

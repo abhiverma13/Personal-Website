@@ -4,6 +4,7 @@
   background-image: url('./images/starbackground.jpg');
   background-position-y: -130px;
   background-size: contain;
+  margin-top: 70px;
 }
 .experience a:hover {
   cursor: default;
@@ -20,7 +21,8 @@ hr{
 .experience-heading {
   text-align: center;
   font-size: 35px;
-  padding: 50px 0;
+  padding-top: 80px;
+  padding-bottom: 50px;
   background-color: black;
   margin-left: 200px;
   margin-right: 200px;
