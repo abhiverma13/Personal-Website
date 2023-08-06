@@ -40,7 +40,7 @@ const Experience = () => {
         <div className="project-container-right">
           <h1 className="project-title-right">Company Program</h1>
           <div className="project-content-right">
-            <iframe title="Company Program Video" width="420" height="315" src="https://www.youtube.com/embed/oB4vQakZvHU"></iframe>
+            <iframe title="Company Program Video" height="350vh" width="2500vh" src="https://www.youtube.com/embed/oB4vQakZvHU"></iframe>
             <p><br /><br /> Through my participation in this program, I experienced the risks and rewards of entrepreneurship by creating a business and developed critical leadership skills. Being a lead on the production and advertising team, I was exposed to the frustrations of working in a group, however, I learned that every individual has their own strengths, which can help a team reach new heights of success. My company, Polaris Candles, which sold scented candles ended up making a profit of $738.27, half of which we donated to the Canadian Mental Health Association. <br /><br /><br />To the left is a promotional video I created with my team members.</p>
           </div>
         </div>

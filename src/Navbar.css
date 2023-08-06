@@ -1,27 +1,48 @@
-.navbar{
-  background-color: black;
-  background-image: url('./images/starbackground.jpg');
-  background-position-y: -130px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  padding: 20px 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky; 
-  top: 0;
-  transition: all 800ms ease-in-out;
+* {
+  color: white;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
-.navbar-fixed{
-  padding: 10px 50px;
+
+/*home navbar*/
+.navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: black;
-  position: sticky; 
+  padding: 20px 50px;
+  position: fixed;
   top: 0;
-  transition: all 250ms ease-in;
-  z-index: 100;
+  background-color: transparent;
+  width: 100%;
+  transition: all 250ms ease-in-out;
+}
+
+.navbar-fixed {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 50px;
+  position: fixed;
+  top: 0;
+  background-color: black;
+  width: 100%;
+  transition: all 250ms ease-in;;
+  z-index: 1;
+}
+.logo {
+  justify-self: start;
+}
+.link-list {
+  display: grid;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 5px;
+  list-style: none;
+  align-items: center;
+  text-align: center;
+  justify-content: end;
+  text-decoration: none;
 }
 nav img {
   max-height: 50px;
@@ -36,13 +57,54 @@ nav a {
   padding: 0px 20px;
   transition: 0.3s ease-in-out;
 }
-a:hover {
+nav a:hover {
   color: gray;
 }
-#home:hover {
-  color: gray;
+.active {
+  text-decoration: underline 5px;
+  color: #D9A785
 }
-#home {
-  text-decoration: none;
+.bars {
   color: white;
+  font-size: 4vh;
+  display: none;
+}
+
+@media (max-width: 850px) {
+  .navbar-home {
+    z-index: 99;
+  }
+  .link-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background: rgba(0, 0, 0, .9);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
+    backdrop-filter: blur(4px);
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -110%;
+    align-items: stretch;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    z-index: -1;
+    transition: all 0.3s ease-in-out;
+  }
+  .link-list.active {
+    left: 0%;
+    text-decoration: none;
+  }
+  .link {
+    display: block;
+    widows: 100%;
+    padding: 2rem 0;
+    color: #222;
+  }
+  .bars {
+    display: block;
+  }
 }

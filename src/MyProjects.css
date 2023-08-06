@@ -12,11 +12,12 @@ hr{
 }
 .my-projects-heading {
   text-align: center;
-  font-size: 35px;
-  padding: 50px 0;
+  font-size: 5vh;
+  padding-top: 20vh;
+  padding-bottom: 5vh;
   background-color: black;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .my-projects-heading a {
   text-decoration: none;
@@ -28,14 +29,13 @@ hr{
 }
 
 /*project left*/
-.project-title-left {
-  padding-left: 40px;
-}
 .project-container-left {
-  padding: 80px 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-left: 5vh;
   background-color: black;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .project-content-left {
   display: flex;
@@ -43,30 +43,43 @@ hr{
   justify-content: center;
 }
 .project-content-left p {
-  font-size: 20px;
-  max-width: 600px;
+  font-size: 3vh;
 }
 .project-content-left a {
-  padding-left: 80px;
+  padding-right: 4vh;
+  padding-left: 4vh;
 }
 .project-content-left a:hover {
   cursor: pointer;
 }
 .project-content-left img {
-  height: 300px;
   background-color: black;
+}
+@media (max-width: 700px) {
+  .project-container-left {
+    padding-right: 5vh;
+  }
+  .project-content-left {
+    display: block;
+    text-align: center;
+  }
+  .project-content-left p {
+    text-align: start;
+  }
+  .project-content-left a {
+    padding: 0;
+  }
 }
 
 /*project right*/
-.project-title-right {
-  padding-right: 40px;
-}
 .project-container-right {
   text-align: right;
-  padding: 80px 0px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  padding-right: 5vh;
   background-color: black;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 .project-content-right {
   display: flex;
@@ -74,18 +87,37 @@ hr{
   justify-content: center;
 }
 .project-content-right p {
-  font-size: 20px;
-  max-width: 600px;
+  font-size: 3vh;
 }
 .project-content-right a {
-  padding-right: 80px;
+  padding-right: 4vh;
+  padding-left: 4vh;
 }
 .project-content-right a:hover {
   cursor: pointer;
 }
 .project-content-right img {
-  height: 300px;
   background-color: black;
+}
+@media (max-width: 700px) {
+  .project-container-right {
+    padding-left: 5vh;
+  }
+  .project-title-right {
+    text-align: end;
+  }
+  .project-content-right {
+    flex-direction: column;
+    text-align: center;
+  }
+  .project-content-right p {
+    text-align: end;
+    order: 1;
+  }
+  .project-content-right a {
+    padding: 0;
+    order: 2;
+  }
 }
 
 /*parallax*/
@@ -95,33 +127,50 @@ hr{
 }
 
 /*specifics*/
+.epilog img {
+  height: 40vh;
+}
 .movie-review-app img {
-  padding-right: 70px;
-  padding-left: 70px;
+  height: 40vh;
 }
 .dojoblog img {
-  max-height: 200px;
-  max-width: 365px;
+  height: 25vh;
 }
 .monsterrpggame img {
-  max-height: 220px;
-  max-width: 400px;
+  height: 25vh;
 }
 .ponggame img {
-  max-height: 200px;
-  max-width: 360px;
+  width: 40vh;
 }
 .gameoflife img {
-  max-height: 200px;
-  padding-right: 80px;
-  padding-left: 80px;
+  height: 30vh;
 }
 .bankaccount img {
-  max-height: 200px;
-  width: 355px;
+  height: 30vh;
 }
 .louisvuitton img {
-  max-height: 200px;
-  padding-right: 70px;
-  padding-left: 70px;
+  height: 30vh;
+}
+@media (max-width: 700px) {
+  .movie-review-app p {
+    padding-bottom: 5vh;
+  }
+  .dojoblog p {
+    padding-bottom: 5vh;
+  }
+  .monsterrpggame p {
+    padding-bottom: 5vh;
+  }
+  .ponggame p {
+    padding-bottom: 5vh;
+  }
+  .gameoflife p {
+    padding-bottom: 5vh;
+  }
+  .bankaccount p {
+    padding-bottom: 5vh;
+  }
+  .louisvuitton p {
+    padding-bottom: 5vh;
+  }
 }
