@@ -162,6 +162,17 @@
     padding-right: 1vh;
   }
 }
+@media (max-width: 420px) {
+  .skills {
+    height: 150vh;
+  }
+  .skills-table {
+    padding: 0;
+  }
+  .skills-table2 {
+    padding: 0;
+  }
+}
 
 /*strengths*/
 .strengths {
@@ -257,10 +268,10 @@
   padding-bottom: 20px;
   max-width: 600px;
 }
-.about-me h1 {
+.about-me-text h1 {
   font-size: 6vh;
 }
-.about-me p {
+.about-me-text p {
   padding-top: 20px;
   font-size: 2.6vh;
 }
@@ -307,6 +318,21 @@
   }
   .about-me-text h1 {
     font-size: 5vh;
+  }
+  .about-me-text p {
+    font-size: 2.6vh;
+  }
+}
+@media (max-width: 420px) and (min-height:670px) {
+  .my-image img {
+    max-width: 400px;
+    max-height: 500px;
+  }
+  .about-me-text h1 {
+    font-size: 4vh;
+  }
+  .about-me-text p {
+    font-size: 2vh;
   }
 }
 

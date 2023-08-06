@@ -152,6 +152,16 @@ hr{
   height: 30vh;
 }
 @media (max-width: 700px) {
+  .my-projects-heading {
+    font-size: 4vh;
+    padding-bottom: 4vh;
+  }
+  .project-content-left p {
+    font-size: 2vh;
+  }
+  .project-content-right p {
+    font-size: 2vh;
+  }
   .movie-review-app p {
     padding-bottom: 5vh;
   }
@@ -172,5 +182,31 @@ hr{
   }
   .louisvuitton p {
     padding-bottom: 5vh;
+  }
+}
+@media (max-width: 420px) {
+  .epilog img {
+    height: 25vh;
+  }
+  .movie-review-app img {
+    height: 30vh;
+  }
+  .dojoblog img {
+    height: 18vh;
+  }
+  .monsterrpggame img {
+    height: 20vh;
+  }
+  .ponggame img {
+    width: 32vh;
+  }
+  .gameoflife img {
+    height: 25vh;
+  }
+  .bankaccount img {
+    height: 20vh;
+  }
+  .louisvuitton img {
+    height: 20vh;
   }
 }

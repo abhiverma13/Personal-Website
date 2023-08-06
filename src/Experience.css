@@ -72,3 +72,25 @@ iframe {
     height: 200px;
   }
 }
+@media (max-width: 700px) {
+  .experience-heading {
+    font-size: 4vh;
+    padding-bottom: 4vh;
+  }
+  .ubclaunchpad img {
+    height: 16vh;
+  }
+  .compsci img {
+    width: 30vh;
+  }
+  .lifeguard img {
+    height: 18vh;
+  }
+  iframe {
+    height: 30vh;
+    width: 40vh;
+  }
+  .alibid img {
+    height: 20vh;
+  }
+}
