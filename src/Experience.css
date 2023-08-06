@@ -2,9 +2,8 @@
   background-color: black;
   color: white;
   background-image: url('./images/starbackground.jpg');
-  background-position-y: -130px;
+  background-position-y: -300px;
   background-size: contain;
-  margin-top: 70px;
 }
 .experience a:hover {
   cursor: default;
@@ -20,12 +19,12 @@ hr{
 }
 .experience-heading {
   text-align: center;
-  font-size: 35px;
-  padding-top: 80px;
-  padding-bottom: 50px;
+  font-size: 5vh;
+  padding-top: 20vh;
+  padding-bottom: 5vh;
   background-color: black;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: 5%;
+  margin-right: 5%;
 }
 
 /*parallax*/
@@ -36,19 +35,40 @@ hr{
 
 /*specifics*/
 .ubclaunchpad img {
-  max-height: 200px;
-  max-width: 360px;
+  height: 30vh;
 }
 .compsci img {
-  max-height: 200px;
-  max-width: 400px;
+  width: 50vh;
 }
 .lifeguard img {
-  max-height: 200px;
-  max-width: 360px;
+  height: 30vh;
 }
 .alibid img {
-  max-height: 200px;
-  padding-left: 80px;
-  padding-right: 80px;
+  height: 30vh;
+}
+iframe {
+  padding-left: 5vh;
+}
+
+@media (max-width: 700px) {
+  .ubclaunchpad img {
+    height: 25vh;
+  }
+  .compsci img{
+    width: 50vh;
+  }
+  .lifeguard img {
+    height: 25vh;
+  }
+  .companyprogram p {
+    padding-bottom: 5vh;
+  }
+  iframe {
+    height: 40vh;
+    width: 50vh;
+    order: 2;
+  }
+  .parallax2 {
+    height: 200px;
+  }
 }

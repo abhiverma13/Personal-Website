@@ -44,34 +44,38 @@ const ContactMe = () => {
 
   return (
     <div className="contactme">
-      <div className="getintouch">
-        <h1>Get in Touch.</h1>
-        <p>Feel free to reach out to me using the form on the right. My LinkedIn, Instagram and email are also located at the bottom of the page.</p>
+      <div className="contactmeheading"></div>
+      <div className="contactmecontainer">
+          <div className="getintouch">
+          <h1>Get in Touch.</h1>
+          <p>Feel free to reach out to me using the form on the right. My LinkedIn, Instagram and email are also located at the bottom of the page.</p>
+        </div>
+        <form className="form" ref={form} onSubmit={sendEmail}>
+          <div className="formlabel">
+            <label>Name</label>
+          </div>
+          <div className="formsection">
+            <input type="text" name="user_name" />
+          </div>
+          <div className="formlabel">
+            <label>Email</label>
+          </div>
+          <div className="formsection">
+            <input type="email" name="user_email" value={email} onChange={handleChange}/>
+          </div>
+          <div className="formlabel">
+            <label>Message</label>
+          </div>
+          <div className="formsection">
+            <textarea name="message" />
+          </div>
+          <div className={error ? "error" : "placeholder"}>Enter a valid email</div>
+          <div className="submitsection">
+            <input className="submit" type="submit" value="Send" />
+          </div>
+        </form>
       </div>
-      <form className="form" ref={form} onSubmit={sendEmail}>
-        <div className="formlabel">
-          <label>Name</label>
-        </div>
-        <div className="formsection">
-          <input type="text" name="user_name" />
-        </div>
-        <div className="formlabel">
-          <label>Email</label>
-        </div>
-        <div className="formsection">
-          <input type="email" name="user_email" value={email} onChange={handleChange}/>
-        </div>
-        <div className="formlabel">
-          <label>Message</label>
-        </div>
-        <div className="formsection">
-          <textarea name="message" />
-        </div>
-        <div className={error ? "error" : "placeholder"}>Enter a valid email</div>
-        <div className="submitsection">
-          <input className="submit" type="submit" value="Send" />
-        </div>
-      </form>
+      
     </div>
   );
 }

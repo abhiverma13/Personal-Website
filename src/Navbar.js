@@ -18,6 +18,9 @@ const Navbar = () => {
   function handleClick() {
     setClicked(clicked => !clicked);
   }
+  function handleClickTwo() {
+    setClicked(false);
+  }
 
   window.addEventListener("scroll", setFixed);
   
@@ -31,16 +34,16 @@ const Navbar = () => {
       </div>
       <ul className={clicked ? "link-list active" : "link-list"}>
         <li className="link">
-          <NavLink to="/" exact={true}>HOME</NavLink>
+          <NavLink to="/" exact={true} onClick={handleClickTwo}>HOME</NavLink>
         </li>
         <li className="link">
-          <NavLink to="/myprojects">MY PROJECTS</NavLink>
+          <NavLink to="/myprojects" onClick={handleClickTwo}>MY PROJECTS</NavLink>
         </li>
         <li className="link">
-          <NavLink to="/experience">EXPERIENCE</NavLink>
+          <NavLink to="/experience" onClick={handleClickTwo}>EXPERIENCE</NavLink>
         </li>
         <li className="link">
-          <NavLink to="/contactme">CONTACT ME</NavLink>
+          <NavLink to="/contactme" onClick={handleClickTwo}>CONTACT ME</NavLink>
         </li>
       </ul>
     </nav>

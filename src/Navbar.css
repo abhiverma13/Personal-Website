@@ -14,10 +14,7 @@
   padding: 20px 50px;
   position: fixed;
   top: 0;
-  background-image: url('./images/backgroundgif.gif');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-color: black;
+  background-color: transparent;
   width: 100%;
   transition: all 250ms ease-in-out;
 }
@@ -45,6 +42,7 @@
   align-items: center;
   text-align: center;
   justify-content: end;
+  text-decoration: none;
 }
 nav img {
   max-height: 50px;
@@ -68,6 +66,7 @@ nav a:hover {
 }
 .bars {
   color: white;
+  font-size: 4vh;
   display: none;
 }
 
@@ -79,7 +78,7 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    background: rgba(255, 255, 255, .25);
+    background: rgba(0, 0, 0, .9);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, .37);
     backdrop-filter: blur(4px);
     border-bottom-left-radius: 13px;
@@ -97,6 +96,7 @@ nav a:hover {
   }
   .link-list.active {
     left: 0%;
+    text-decoration: none;
   }
   .link {
     display: block;
