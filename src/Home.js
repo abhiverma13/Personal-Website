@@ -28,7 +28,7 @@ const Home = () => {
       <div className="introduction">
         <div className="gif">
           <p className="title">I am <b>Abhi Verma</b>.</p>
-          <p className="subtitle">An aspiring <b>Computer Engineer</b>.</p>
+          <p className="subtitle">A <b>Computer Engineer</b> at UBC.</p>
         </div>
       </div>
       <div className="skills">
