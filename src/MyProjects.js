@@ -46,15 +46,7 @@ const MyProjects = () => {
       link="https://github.com/abhiverma13/Dojo-Blog">
       </ProjectLeft>
       <Parallax className="parallax2" strength={600} bgImage={space2} />
-      <ProjectRight className="monsterrpggame" 
-      title= "Monster RPG Game"
-      description="EpiLog is a mobile health app designed to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend aspect of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
-      instructions="Clicking on the logo to the right will take you to UBC Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
-      image={monsterrpggame}
-      link="https://replit.com/@averma1304/Monster-RPG-Game?v=1">
-      </ProjectRight>
-      <hr />
-      <ProjectLeft className="ponggame" 
+      <ProjectRight className="ponggame" 
       title= "Pong Game"
       description="​This is a classic two player game that I created using a Java GUI with an
       increasing speed of the ball after each hit and added sound effects.
@@ -63,6 +55,14 @@ const MyProjects = () => {
       instructions="You can download this game through my GitHub repository by clicking on the image to the right."
       image={ponggame}
       link="https://github.com/abhiverma13/Pong-Game">
+      </ProjectRight>
+      <hr />
+      <ProjectLeft className="monsterrpggame" 
+      title= "Monster RPG Game"
+      description="EpiLog is a mobile health app designed to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend aspect of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
+      instructions="Clicking on the logo to the right will take you to UBC Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
+      image={monsterrpggame}
+      link="https://replit.com/@averma1304/Monster-RPG-Game?v=1">
       </ProjectLeft>
       <hr />
       <ProjectRight className="gameoflife" 
