@@ -25,7 +25,7 @@ const MyProjects = () => {
       <ProjectLeft className="epilog" 
       title= "EpiLog"
       description="EpiLog is a mobile health app designed by UBC Launch Pad to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
-      instructions="Clicking on the logo to the right will take you to Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
+      instructions="Clicking on the logo will take you to Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
       image={epilog}
       link="https://github.com/ubclaunchpad">
       </ProjectLeft>
@@ -52,7 +52,7 @@ const MyProjects = () => {
       increasing speed of the ball after each hit and added sound effects.
       ​The controls for player 1 are the arrow keys, while the controls for
       player 2 are W, S, A and D."
-      instructions="You can download this game through my GitHub repository by clicking on the image to the right."
+      instructions="You can download this game through my GitHub repository by clicking on the image."
       image={ponggame}
       link="https://github.com/abhiverma13/Pong-Game">
       </ProjectRight>
@@ -60,7 +60,7 @@ const MyProjects = () => {
       <ProjectLeft className="monsterrpggame" 
       title= "Monster RPG Game"
       description="EpiLog is a mobile health app designed to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend aspect of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
-      instructions="Clicking on the logo to the right will take you to UBC Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
+      instructions="Clicking on the logo will take you to UBC Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
       image={monsterrpggame}
       link="https://replit.com/@averma1304/Monster-RPG-Game?v=1">
       </ProjectLeft>
@@ -71,7 +71,7 @@ const MyProjects = () => {
       John Conway, where one creates an initial state of cells and then
       observes the evolution of those cells.
       ​I have created this game in C through the use of arrays."
-      instructions="​Clicking on the image to the left will take you to my Replit where you
+      instructions="​Clicking on the image will take you to my Replit where you
       ​can play the game yourself as well as checkout the source code."
       image={gameoflife}
       link="https://replit.com/@averma1304/Game-of-Life?v=1">
@@ -80,7 +80,7 @@ const MyProjects = () => {
       <ProjectLeft className="bankaccount" 
       title= "Bank Account"
       description="This is Java GUI that I have made which keeps track of the current balance, withdrawals and deposits of two separate bank accounts."
-      instructions="Clicking on the image to the right will take you to my Replit where ​you can checkout the GUI yourself as well as checkout the source code."
+      instructions="Clicking on the image will take you to my Replit where ​you can checkout the GUI yourself as well as checkout the source code."
       image={bankaccount}
       link="https://replit.com/@averma1304/Bank-Account?v=1">
       </ProjectLeft>
@@ -90,7 +90,7 @@ const MyProjects = () => {
       description="This is a function I created that draws the Louis Vuitton logo
       using Turtle graphics in Python. The function takes in the coordinates,
       ​size and angle at which to draw the logo."
-      instructions="Clicking on the image to the left will take you to my Replit
+      instructions="Clicking on the image will take you to my Replit
       where you can see the logo being drawn yourself as well as
       ​checkout the source code."
       image={louisvuitton}
