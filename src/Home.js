@@ -139,10 +139,10 @@ const Home = () => {
       <Parallax className="parallax1" strength={600} bgImage={space1} />
       <div className="quote">
         <div className="quote-text">
-          <p>"Don't tell me sky's the limit <br /> ​when there are footprints on the moon.”</p>
+          <p>"Intellectual growth should commence<br />at birth and cease only at death. ​”</p>
         </div>
         <div className="quote-author">
-          <p>-Paul Brandt</p>
+          <p>-Albert Einstein</p>
         </div>
       </div>
     </div>

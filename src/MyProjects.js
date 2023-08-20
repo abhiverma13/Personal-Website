@@ -3,7 +3,7 @@ import ProjectLeft from "./ProjectLeft";
 import ProjectRight from "./ProjectRight";
 import epilog from './images/epilog.png';
 import moviereviewapp from './images/moviereviewapp.png';
-import dojoblog from './images/dojoblog.png';
+import vermablogs from './images/vermablogs.png';
 import { Parallax } from 'react-parallax';
 import space2 from './images/space2.jpg';
 import monsterrpggame from './images/monsterrpggame.png';
@@ -32,18 +32,18 @@ const MyProjects = () => {
       <hr />
       <ProjectRight className="movie-review-app" 
       title= "Movie Review App"
-      description="EpiLog is a mobile health app designed to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend aspect of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
-      instructions="Clicking on the logo to the right will take you to UBC Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
+      description="This web application uses The Movie Database API to display the latest movies on the homepage as well as search for any movie in order to post reviews online. It is currently hosted on a Replit server. The front-end of this application was made using HTML, CSS and JavaScript while the backend used Express.js and MongoDB."
+      instructions="Clicking on the logo to will take you to the website and you can check out the source code on my GitHub."
       image={moviereviewapp}
       link="https://movie-app-frontend.averma1304.repl.co/index.html">
       </ProjectRight>
       <hr />
       <ProjectLeft className="dojoblog" 
-      title= "The Dojo Blog"
-      description="EpiLog is a mobile health app designed to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend aspect of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
-      instructions="Clicking on the logo to the right will take you to UBC Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
-      image={dojoblog}
-      link="https://github.com/abhiverma13/Dojo-Blog">
+      title= "The Verma Blogs"
+      description="My first React application is a blog website where a user can create and post a new blog as well as view other people's blogs. The data is all stored in a local file, however, if I wanted to expand this project I could have used an external database such as MongoDB."
+      instructions="Clicking on the logo will take you to my GitHub repository where you can check out the source code as well as download the project."
+      image={vermablogs}
+      link="https://github.com/abhiverma13/Verma-Blogs">
       </ProjectLeft>
       <Parallax className="parallax2" strength={600} bgImage={space2} />
       <ProjectRight className="ponggame" 
@@ -59,8 +59,8 @@ const MyProjects = () => {
       <hr />
       <ProjectLeft className="monsterrpggame" 
       title= "Monster RPG Game"
-      description="EpiLog is a mobile health app designed to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend aspect of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
-      instructions="Clicking on the logo will take you to UBC Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
+      description="A monster role-playing game that I made using HTML, CSS and JavaScript where one goes through a series of actions to eventually try to defeat the dragon and win the game."
+      instructions="Clicking on the logo will take you to my Replit where you can play the game as well as check out the source code."
       image={monsterrpggame}
       link="https://replit.com/@averma1304/Monster-RPG-Game?v=1">
       </ProjectLeft>
