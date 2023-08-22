@@ -129,7 +129,7 @@ const Home = () => {
       <div className="about-me">
         <div className="my-image">
           <img src={myimage} alt="myimage" />
-          <a href="https://abhi-verma.weebly.com/uploads/1/4/4/0/144003627/abhi_vermas_resume.pdf" target="_blank" rel="noreferrer"><button>MY RESUME</button></a>
+          <a href="https://abhi-verma.weebly.com/uploads/1/4/4/0/144003627/abhis_resume.pdf" target="_blank" rel="noreferrer"><button>MY RESUME</button></a>
         </div>
         <div className="about-me-text">
           <h1>A Little More About <br /> Myself.</h1>
