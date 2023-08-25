@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { Parallax } from 'react-parallax';
 import space1 from './images/space1.jpg';
-import myimage from './images/myimage.jpg';
+import myimage from './images/personalpic.jpg';
 import html from './images/html.png';
 import css from './images/css.png';
 import js from './images/js.png';
