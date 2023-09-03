@@ -27,7 +27,7 @@ const MyProjects = () => {
       description="EpiLog is a mobile health app designed by UBC Launch Pad to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
       instructions="Clicking on the logo will take you to Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
       image={epilog}
-      link="https://github.com/ubclaunchpad">
+      link="https://github.com/ubclaunchpad/epilog">
       </ProjectLeft>
       <hr />
       <ProjectRight className="movie-review-app" 
