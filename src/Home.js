@@ -16,6 +16,7 @@ import git from './images/git.png';
 import learner from './images/learner.png'
 import solver from './images/solver.png';
 import leader from './images/leader.png';
+import resume from './Resume.pdf';
 
 const Home = () => {
 
@@ -129,7 +130,7 @@ const Home = () => {
       <div className="about-me">
         <div className="my-image">
           <img src={myimage} alt="myimage" />
-          <a href="https://abhi-verma.weebly.com/uploads/1/4/4/0/144003627/abhi_verma_resume.pdf" target="_blank" rel="noreferrer"><button>MY RESUME</button></a>
+          <button onClick = {() => {window.open(resume, "_blank")}}>MY RESUME</button>
         </div>
         <div className="about-me-text">
           <h1>A Little More About <br /> Myself.</h1>
