@@ -110,7 +110,7 @@ const Home = () => {
       </div>
       <div className="lasttable">
           <table className="skills-table3">
-          <caption><h1><i class="fa-solid fa-database"></i> Other Tools</h1></caption>
+          <caption><h1><i class="fa fa-wrench"></i> Other Tools</h1></caption>
             <tr>
               <td><img src={matlab} alt="matlab" /></td>
               <td><img src={verilog} alt="verilog" /></td>
