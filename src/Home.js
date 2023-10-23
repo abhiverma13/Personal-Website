@@ -12,7 +12,12 @@ import c from './images/c.png';
 import python from './images/python.png';
 import mongodb from './images/mongodb.png';
 import nodejs from './images/nodejs.png';
+import express from './images/express.png';
 import git from './images/git.png';
+import matlab from './images/matlab.png';
+import arduino from './images/arduino.png';
+import verilog from './images/verilog.png';
+import slack from './images/slack.png';
 import learner from './images/learner.png'
 import solver from './images/solver.png';
 import leader from './images/leader.png';
@@ -36,7 +41,22 @@ const Home = () => {
         <h2 className='skills-heading'>Skills</h2>
         <div className="tables">
           <table className="skills-table">
-            <caption><h1><i class="fa-solid fa-code"></i> Front-End Developer</h1></caption>
+            <caption><h1><i class="fa-solid fa-code"></i> Programming Languages</h1></caption>
+            <tr className="skills-images">
+              <td><img src={java} alt="java" /></td>
+              <td><img src={c} alt="c" /></td>
+              <td><img src={python} alt="python" /></td>
+            </tr>
+            <tr className="skills-title">
+              <td><h3>Java</h3></td>
+              <td><h3>C</h3></td>
+              <td><h3>Python</h3></td>
+            </tr>
+            <tr className="skills-subtitle">
+              <td><h3>Intermediate</h3></td>
+              <td><h3>Basic</h3></td>
+              <td><h3>Basic</h3></td>
+            </tr>
             <tr className="skills-images">
               <td><img src={html} alt="html" /></td>
               <td><img src={css} alt="css" /></td>
@@ -52,60 +72,71 @@ const Home = () => {
               <td><h3>Intermediate</h3></td>
               <td><h3>Intermediate</h3></td>
             </tr>
+          </table>
+          <table className="skills-table2">
+          <caption><h1><i class="fa-solid fa-database"></i> Software Tools</h1></caption>
             <tr className="skills-images">
               <td><img src={react} alt="react" /></td>
               <td><img src={flutter} alt="flutter" /></td>
-              <td><img src={java} alt="java" /></td>
+              <td><img src={nodejs} alt="nodejs" /></td>
             </tr>
             <tr className="skills-title">
               <td><h3>React</h3></td>
               <td><h3>Flutter</h3></td>
-              <td><h3>Java</h3></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Intermediate</h3></td>
-            </tr>
-            <tr className="skills-images">
-              <td><img src={c} alt="c" /></td>
-              <td><img src={python} alt="python" /></td>
-            </tr>
-            <tr className="skills-title">
-              <td><h3>C</h3></td>
-              <td><h3>Python</h3></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Basic</h3></td>
-              <td><h3>Basic</h3></td>
-            </tr>
-          </table>
-          <table className="skills-table2">
-          <caption><h1><i class="fa-solid fa-database"></i> Back-End Developer</h1></caption>
-            <tr>
-              <td><img src={mongodb} alt="mongodb" /></td>
-              <td><img src={nodejs} alt="nodejs" /></td>
-            </tr>
-            <tr>
-              <td><h3>MongoDB</h3></td>
               <td><h3>Node.js</h3></td>
             </tr>
             <tr className="skills-subtitle">
-              <td><h3>Basic</h3></td>
+              <td><h3>Intermediate</h3></td>
+              <td><h3>Intermediate</h3></td>
               <td><h3>Basic</h3></td>
             </tr>
             <tr>
+              <td><img src={mongodb} alt="mongodb" /></td>
+              <td><img src={express} alt="express" /></td>
               <td><img src={git} alt="git" /></td>
             </tr>
             <tr>
+              <td><h3>MongoDB</h3></td>
+              <td><h3>Express.js</h3></td>
               <td><h3>Git</h3></td>
             </tr>
             <tr className="skills-subtitle">
+              <td><h3>Basic</h3></td>
+              <td><h3>Basic</h3></td>
               <td><h3>Intermediate</h3></td>
             </tr>
           </table>
         </div>
       </div>
+      <div className="lasttable">
+          <table className="skills-table3">
+          <caption><h1><i class="fa-solid fa-database"></i> Other Tools</h1></caption>
+            <tr>
+              <td><img src={matlab} alt="matlab" /></td>
+              <td><img src={verilog} alt="verilog" /></td>
+            </tr>
+            <tr>
+              <td><h3>MATLAB</h3></td>
+              <td><h3>Verilog</h3></td>
+            </tr>
+            <tr className="skills-subtitle">
+              <td><h3>Basic</h3></td>
+              <td><h3>Intermediate</h3></td>
+            </tr>
+            <tr>
+              <td><img src={arduino} alt="arduino" /></td>
+              <td><img src={slack} alt="slack" /></td>
+            </tr>
+            <tr>
+              <td><h3>Arduino</h3></td>
+              <td><h3>Slack</h3></td>
+            </tr>
+            <tr className="skills-subtitle">
+              <td><h3>Basic</h3></td>
+              <td><h3>Intermediate</h3></td>
+            </tr>
+          </table>
+        </div>
       <Parallax className="parallax1" strength={600} bgImage={space1} />
       <div className="strengths">
         <h2 className="iam">I Am...</h2>
