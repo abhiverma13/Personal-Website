@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { useHistory } from 'react-router-dom';
 import emailjs from '@emailjs/browser';
 
 const ContactMe = () => {
@@ -8,23 +9,51 @@ const ContactMe = () => {
 
   const form = useRef();
 
-  const sendEmail = (e) => {
-    
+  const history = useHistory();
 
-    emailjs.sendForm('service_oyem80q', 'template_yqi8u61', form.current, '_2x4APNGu3ktb-okL')
+  const sendEmail = (e) => {
+    const message = e.target.elements.message.value;
+    const name = e.target.elements.user_name.value;
+    if (!isValidEmail(email)) {
+      e.preventDefault();
+      setError('Email is invalid');
+    }
+    else if(!isValidName(name)) {
+      e.preventDefault();
+      setError2('Name is invalid');
+    }
+    else if(!isValidMessage(message)) {
+      e.preventDefault();
+      setError3('Message is invalid');
+    }
+    else {
+      emailjs.sendForm('service_oyem80q', 'template_yqi8u61', form.current, '_2x4APNGu3ktb-okL')
       .then((result) => {
           console.log(result.text);
-          window.location.reload(true);
+          history.replace('/contactme');
       }, (error) => {
           console.log(error.text);
       })
+    }
   };
 
   const [email, setEmail] = useState('');
+  const [name, setName] = useState('');
+  const [message, setMessage] = useState('');
   const [error, setError] = useState(null);
+  const [error2, setError2] = useState(null);
+  const [error3, setError3] = useState(null);
+
+  function isValidName(name) {
+    return name.trim() !== '';
+  }
 
   function isValidEmail(email) {
     return /\S+@\S+\.\S+/.test(email);
+  }
+
+  function isValidMessage(message) {
+    return message.trim() !== '';
   }
 
   const handleChange = event => {
@@ -70,6 +99,8 @@ const ContactMe = () => {
             <textarea name="message" />
           </div>
           <div className={error ? "error" : "placeholder"}>Enter a valid email</div>
+          <div className={error2 ? "error" : "placeholder"}>Name cannot be empty</div>
+          <div className={error3 ? "error" : "placeholder"}>Message cannot be empty</div>
           <div className="submitsection">
             <input className="submit" type="submit" value="Send" />
           </div>
