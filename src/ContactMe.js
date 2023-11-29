@@ -9,7 +9,7 @@ const ContactMe = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
-    e.preventDefault();
+    
 
     emailjs.sendForm('service_oyem80q', 'template_yqi8u61', form.current, '_2x4APNGu3ktb-okL')
       .then((result) => {
