@@ -1,4 +1,4 @@
-.container {
+.not-found-container {
   text-align: center;
   padding: 20px;
   background-color: #ffffff;
@@ -6,10 +6,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
+.not-found-container h2 {
   color: #333333;
 }
 
-p {
+.not-found-container p {
   color: #666666;
 }
