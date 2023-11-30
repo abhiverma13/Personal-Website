@@ -97,6 +97,11 @@
   background-color: black;
   font-size: 15px;
 }
+.sent{
+  color: rgb(17, 219, 17);
+  background-color: black;
+  font-size: 15px;
+}
 @media (max-width: 420px) {
   .getintouch {
     width: auto;

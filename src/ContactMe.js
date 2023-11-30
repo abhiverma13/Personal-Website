@@ -27,10 +27,12 @@ const ContactMe = () => {
       setError3('Message is invalid');
     }
     else {
+      e.preventDefault();
       emailjs.sendForm('service_oyem80q', 'template_yqi8u61', form.current, '_2x4APNGu3ktb-okL')
       .then((result) => {
           console.log(result.text);
           history.replace('/contactme');
+          setSent('Message sent');
       }, (error) => {
           console.log(error.text);
       })
@@ -38,6 +40,7 @@ const ContactMe = () => {
   };
 
   const [email, setEmail] = useState('');
+  const [sent, setSent] = useState(null);
   const [error, setError] = useState(null);
   const [error2, setError2] = useState(null);
   const [error3, setError3] = useState(null);
@@ -99,6 +102,7 @@ const ContactMe = () => {
           <div className={error ? "error" : "placeholder"}>Enter a valid email</div>
           <div className={error2 ? "error" : "placeholder"}>Name cannot be empty</div>
           <div className={error3 ? "error" : "placeholder"}>Message cannot be empty</div>
+          <div className={sent ? "sent" : "placeholder"}>Message sent</div>
           <div className="submitsection">
             <input className="submit" type="submit" value="Send" />
           </div>
