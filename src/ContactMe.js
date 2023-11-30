@@ -38,8 +38,6 @@ const ContactMe = () => {
   };
 
   const [email, setEmail] = useState('');
-  const [name, setName] = useState('');
-  const [message, setMessage] = useState('');
   const [error, setError] = useState(null);
   const [error2, setError2] = useState(null);
   const [error3, setError3] = useState(null);
