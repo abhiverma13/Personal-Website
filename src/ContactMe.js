@@ -32,6 +32,9 @@ const ContactMe = () => {
       .then((result) => {
           console.log(result.text);
           history.replace('/contactme');
+          document.getElementById("user_name").value = "";
+          document.getElementById("user_email").value = "";
+          document.getElementById("message").value = "";
           setSent('Message sent');
       }, (error) => {
           console.log(error.text);
@@ -85,19 +88,19 @@ const ContactMe = () => {
             <label>Name</label>
           </div>
           <div className="formsection">
-            <input type="text" name="user_name" />
+            <input type="text" name="user_name" id='user_name'/>
           </div>
           <div className="formlabel">
             <label>Email</label>
           </div>
           <div className="formsection">
-            <input type="email" name="user_email" value={email} onChange={handleChange}/>
+            <input type="email" name="user_email" id='user_email' value={email} onChange={handleChange}/>
           </div>
           <div className="formlabel">
             <label>Message</label>
           </div>
           <div className="formsection">
-            <textarea name="message" />
+            <textarea name="message" id='message'/>
           </div>
           <div className={error ? "error" : "placeholder"}>Enter a valid email</div>
           <div className={error2 ? "error" : "placeholder"}>Name cannot be empty</div>
