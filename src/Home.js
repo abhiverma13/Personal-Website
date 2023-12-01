@@ -17,7 +17,7 @@ import git from './images/git.png';
 import matlab from './images/matlab.png';
 import arduino from './images/arduino.png';
 import verilog from './images/verilog.png';
-import slack from './images/slack.png';
+import arm from './images/arm.png';
 import learner from './images/learner.png'
 import solver from './images/solver.png';
 import leader from './images/leader.png';
@@ -125,11 +125,11 @@ const Home = () => {
             </tr>
             <tr>
               <td><img src={arduino} alt="arduino" /></td>
-              <td><img src={slack} alt="slack" /></td>
+              <td><img src={arm} alt="arm" /></td>
             </tr>
             <tr>
               <td><h3>Arduino</h3></td>
-              <td><h3>Slack</h3></td>
+              <td><h3>ARM</h3></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Basic</h3></td>
