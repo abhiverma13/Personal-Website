@@ -12,6 +12,7 @@ import gameoflife from './images/gameoflife.gif';
 import bankaccount from './images/bankaccount.png';
 import louisvuitton from './images/louisvuitton.png';
 import cosmicgateway from './images/cosmicgateway.png';
+import de1 from './images/de1.png';
 
 const MyProjects = () => {
   useEffect(() => {
@@ -23,12 +24,20 @@ const MyProjects = () => {
       <div className="my-projects-heading">
         You can checkout all my projects on my <a href="https://github.com/abhiverma13" target="_blank" rel="noreferrer">GitHub</a> profile.
       </div>
-      <ProjectRight className="cosmic-gateway" 
+      <ProjectLeft className="cosmic-gateway" 
       title= "Cosmic Gateway"
       description="Cosmic Gateway is UBC Launch Pad’s internal club tools under which encompass everything that will be used by our club leads, admin work and members. As part of the Wiki sub-team, I have worked on our web application that was constructed using Svelte and effectively manages our documents stored on AWS S3. This full-stack project involves implementing the UI designs made by our team of designers on the front-end. Additionally, we want to store metadata (who last edited the documents, when were they updated, etc.) in an intermediary database that will be used to query, search, filter and store sensitive information. We are currently working on implementing this with a NoSQL database, which will also need to be synced with the S3 bucket. This will be an ongoing project for the 2023-2024 academic year."
       instructions="Clicking on the logo will take you to the current Launch Pad Docs, which is still a work-in-progress."
       image={cosmicgateway}
       link="https://docs.ubclaunchpad.com/">
+      </ProjectLeft>
+      <hr />
+      <ProjectRight className="risc-machine" 
+      title= "RISC Machine"
+      description="A “Reduced Instruction Set Computer” is essentially a simple computer that can execute programs with a small set of instructions. This was a project that was completed in stages, including creating the datapath, a controller for this datapath and finally adding memory and I/O. The RISC machine was made using Verilog and tested on ModelSim and Quartus in order to be run on a DE1-SoC circuit board."
+      instructions="A table with the set of instructions that have been implemented in this RISC machine can be found in the README on my github repository by clicking on the DE1-SoC circuit board."
+      image={de1}
+      link="https://github.com/abhiverma13/RISC-Machine">
       </ProjectRight>
       <hr />
       <ProjectLeft className="epilog" 
