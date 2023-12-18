@@ -127,6 +127,12 @@ hr{
 }
 
 /*specifics*/
+.risc-machine img {
+  height: 30vh;
+}
+.cosmic-gateway img {
+  height: 30vh;
+}
 .epilog img {
   height: 40vh;
 }
