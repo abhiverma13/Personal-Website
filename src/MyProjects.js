@@ -11,6 +11,7 @@ import ponggame from './images/ponggame.gif';
 import gameoflife from './images/gameoflife.gif';
 import bankaccount from './images/bankaccount.png';
 import louisvuitton from './images/louisvuitton.png';
+import cosmicgateway from './images/cosmicgateway.png';
 
 const MyProjects = () => {
   useEffect(() => {
@@ -22,6 +23,14 @@ const MyProjects = () => {
       <div className="my-projects-heading">
         You can checkout all my projects on my <a href="https://github.com/abhiverma13" target="_blank" rel="noreferrer">GitHub</a> profile.
       </div>
+      <ProjectRight className="cosmic-gateway" 
+      title= "Cosmic Gateway"
+      description="Cosmic Gateway is UBC Launch Pad’s internal club tools under which encompass everything that will be used by our club leads, admin work and members. As part of the Wiki sub-team, I have worked on our web application that was constructed using Svelte and effectively manages our documents stored on AWS S3. This full-stack project involves implementing the UI designs made by our team of designers on the front-end. Additionally, we want to store metadata (who last edited the documents, when were they updated, etc.) in an intermediary database that will be used to query, search, filter and store sensitive information. We are currently working on implementing this with a NoSQL database, which will also need to be synced with the S3 bucket. This will be an ongoing project for the 2023-2024 academic year."
+      instructions="Clicking on the logo will take you to the current Launch Pad Docs, which is still a work-in-progress."
+      image={cosmicgateway}
+      link="https://docs.ubclaunchpad.com/">
+      </ProjectRight>
+      <hr />
       <ProjectLeft className="epilog" 
       title= "EpiLog"
       description="EpiLog is a mobile health app designed by UBC Launch Pad to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
@@ -37,7 +46,7 @@ const MyProjects = () => {
       image={moviereviewapp}
       link="https://movie-app-frontend.averma1304.repl.co/index.html">
       </ProjectRight>
-      <hr />
+      <Parallax className="parallax2" strength={600} bgImage={space2} />
       <ProjectLeft className="dojoblog" 
       title= "The Verma Blogs"
       description="My first React application is a blog website where a user can create and post a new blog as well as view other people's blogs. The data is all stored in a local file, however, if I wanted to expand this project I could have used an external database such as MongoDB."
@@ -45,7 +54,7 @@ const MyProjects = () => {
       image={vermablogs}
       link="https://github.com/abhiverma13/Verma-Blogs">
       </ProjectLeft>
-      <Parallax className="parallax2" strength={600} bgImage={space2} />
+      <hr />
       <ProjectRight className="ponggame" 
       title= "Pong Game"
       description="​This is a classic two player game that I created using a Java GUI with an
@@ -64,7 +73,7 @@ const MyProjects = () => {
       image={monsterrpggame}
       link="https://replit.com/@averma1304/Monster-RPG-Game?v=1">
       </ProjectLeft>
-      <hr />
+      <Parallax className="parallax2" strength={600} bgImage={space2} />
       <ProjectRight className="gameoflife" 
       title= "Game of Life"
       description="​​A simulation invented in 1970 by Cambridge mathematician,
@@ -76,7 +85,7 @@ const MyProjects = () => {
       image={gameoflife}
       link="https://replit.com/@averma1304/Game-of-Life?v=1">
       </ProjectRight>
-      <Parallax className="parallax2" strength={600} bgImage={space2} />
+      <hr />
       <ProjectLeft className="bankaccount" 
       title= "Bank Account"
       description="This is Java GUI that I have made which keeps track of the current balance, withdrawals and deposits of two separate bank accounts."

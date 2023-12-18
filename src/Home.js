@@ -129,7 +129,7 @@ const Home = () => {
             </tr>
             <tr>
               <td><h3>Arduino</h3></td>
-              <td><h3>ARM</h3></td>
+              <td><h3>ARMv7</h3></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Basic</h3></td>
