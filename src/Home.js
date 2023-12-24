@@ -18,6 +18,8 @@ import matlab from './images/matlab.png';
 import arduino from './images/arduino.png';
 import verilog from './images/verilog.png';
 import arm from './images/arm.png';
+import typescript from './images/typescript.png';
+import svelte from './images/svelte.png';
 import learner from './images/learner.png'
 import solver from './images/solver.png';
 import leader from './images/leader.png';
@@ -72,18 +74,33 @@ const Home = () => {
               <td><h3>Intermediate</h3></td>
               <td><h3>Intermediate</h3></td>
             </tr>
+            <tr className="skills-images">
+              <td></td>
+              <td><img src={typescript} alt="typescript" /></td>
+              <td></td>
+            </tr>
+            <tr className="skills-title">
+              <td><h3> </h3></td>
+              <td><h3>TypeScript</h3></td>
+              <td><h3> </h3></td>
+            </tr>
+            <tr className="skills-subtitle">
+              <td><h3>Intermediate</h3></td>
+              <td><h3>Basic</h3></td>
+              <td><h3>Basic</h3></td>
+            </tr>
           </table>
           <table className="skills-table2">
           <caption><h1><i class="fa-solid fa-database"></i> Software Tools</h1></caption>
             <tr className="skills-images">
               <td><img src={react} alt="react" /></td>
+              <td><img src={svelte} alt="svelte" /></td>
               <td><img src={flutter} alt="flutter" /></td>
-              <td><img src={nodejs} alt="nodejs" /></td>
             </tr>
             <tr className="skills-title">
               <td><h3>React</h3></td>
+              <td><h3>Svelte</h3></td>
               <td><h3>Flutter</h3></td>
-              <td><h3>Node.js</h3></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Intermediate</h3></td>
@@ -91,19 +108,34 @@ const Home = () => {
               <td><h3>Basic</h3></td>
             </tr>
             <tr>
-              <td><img src={mongodb} alt="mongodb" /></td>
+              <td><img src={nodejs} alt="nodejs" /></td>
               <td><img src={express} alt="express" /></td>
-              <td><img src={git} alt="git" /></td>
+              <td><img src={mongodb} alt="mongodb" /></td>
             </tr>
             <tr>
-              <td><h3>MongoDB</h3></td>
+              <td><h3>Node.js</h3></td>
               <td><h3>Express.js</h3></td>
-              <td><h3>Git</h3></td>
+              <td><h3>MongoDB</h3></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Basic</h3></td>
               <td><h3>Basic</h3></td>
               <td><h3>Intermediate</h3></td>
+            </tr>
+            <tr className="skills-images">
+              <td></td>
+              <td><img src={git} alt="git" /></td>
+              <td></td>
+            </tr>
+            <tr className="skills-title">
+              <td><h3> </h3></td>
+              <td><h3>Git</h3></td>
+              <td><h3> </h3></td>
+            </tr>
+            <tr className="skills-subtitle">
+              <td><h3>Intermediate</h3></td>
+              <td><h3>Basic</h3></td>
+              <td><h3>Basic</h3></td>
             </tr>
           </table>
         </div>
