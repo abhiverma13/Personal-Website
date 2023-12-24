@@ -68,7 +68,7 @@
   background-image: url('./images/starbackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 120vh;
+  height: 900px;
 }
 .skills-heading {
   font-size: 40px;
@@ -147,13 +147,13 @@
 
 @media (max-width: 1440px) {
   .skills {
-    height: 80vh;
+    height: 900px;
   }
 }
 
 @media (max-width: 1100px) {
   .skills {
-    height: 110vh;
+    height: 950px;
   }
   .skills-table3 {
     width: 50%;
@@ -163,7 +163,7 @@
 @media (max-width: 800px) {
   .skills {
     text-align: center;
-    height: 170vh;
+    height: 1550px;
     background-repeat: repeat;
     background-size: contain;
   }
@@ -202,7 +202,7 @@
 }
 @media (max-width: 420px) {
   .skills {
-    height: 120vh;
+    height: 1200px;
   }
   .skills-table {
     padding: 0;
