@@ -68,7 +68,7 @@
   background-image: url('./images/starbackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 90vh;
+  height: 100vh;
 }
 .skills-heading {
   font-size: 40px;
