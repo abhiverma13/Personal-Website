@@ -11,7 +11,7 @@ const Footer = () => {
           <a href="mailto: a.verma1304@gmail.com"><i class="fa-sharp fa-regular fa-envelope"></i></a>
         </div>
         <div className="footer-bottom">
-          <p>Copyright &copy;2023; Designed by Abhi Verma</p>
+          <p>Copyright &copy;2024; Designed by Abhi Verma</p>
         </div>
       </div>
     </footer>
