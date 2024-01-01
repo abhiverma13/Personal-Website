@@ -13,6 +13,7 @@ import bankaccount from './images/bankaccount.png';
 import louisvuitton from './images/louisvuitton.png';
 import cosmicgateway from './images/cosmicgateway.png';
 import de1 from './images/de1.png';
+import spotify from './images/spotify.png';
 
 const MyProjects = () => {
   useEffect(() => {
@@ -32,12 +33,12 @@ const MyProjects = () => {
       link="https://docs.ubclaunchpad.com/">
       </ProjectLeft>
       <hr />
-      <ProjectRight className="risc-machine" 
-      title= "RISC Machine"
-      description="A “Reduced Instruction Set Computer” is essentially a simple computer that can execute programs with a small set of instructions. This was a project that was completed in stages, including creating the datapath, a controller for this datapath and finally adding memory and I/O. The RISC machine was made using Verilog and tested on ModelSim and Quartus in order to be run on a DE1-SoC circuit board."
-      instructions="A table with the set of instructions that have been implemented in this RISC machine can be found in the README on my github repository by clicking on the DE1-SoC circuit board."
-      image={de1}
-      link="https://github.com/abhiverma13/RISC-Machine">
+      <ProjectRight className="spotify-app" 
+      title= "Spotify Playlist Generator"
+      description="Frustrated with my gigantic playlist of 500+ songs, I decided to make an app to filter songs out of playlists based on mood such as sad or party. Knowing people like my dad struggle with finding new songs, I also added the feature to find similar songs by inputting seed tracks. This is a Python-based web application developed with Flask and integrated with the Spotify API, offering a user-friendly interface for playlist management and music exploration. Users can authenticate with their Spotify credentials, explore existing playlists, create new ones, and add tracks to both new and existing playlists."
+      instructions="Clicking on the logo will take you to my GitHub repository where you can download the code and follow the instructions in the README.md file to use the app."
+      image={spotify}
+      link="https://github.com/abhiverma13/Spotify-Playlist-Generator">
       </ProjectRight>
       <hr />
       <ProjectLeft className="epilog" 
@@ -50,18 +51,34 @@ const MyProjects = () => {
       <hr />
       <ProjectRight className="movie-review-app" 
       title= "Movie Review App"
-      description="This full stack web application uses The Movie Database API to display the latest movies on the homepage as well as search for any movie in order to post reviews online. It is currently hosted on a Replit server. The front-end of this application was made using HTML, CSS and JavaScript while the back-end used Express.js and MongoDB."
+      description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. It is currently hosted on a Replit server. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
       instructions="Clicking on the logo to will take you to the website and you can check out the source code on my GitHub."
       image={moviereviewapp}
       link="https://movie-app-frontend.averma1304.repl.co/index.html">
       </ProjectRight>
       <Parallax className="parallax2" strength={600} bgImage={space2} />
-      <ProjectLeft className="dojoblog" 
+      <ProjectLeft className="risc-machine" 
+      title= "RISC Machine"
+      description="A “Reduced Instruction Set Computer” is essentially a simple computer that can execute programs with a small set of instructions. This was a project that was completed in stages, including creating the datapath, a controller for this datapath and finally adding memory and I/O. The RISC machine was made using Verilog and tested on ModelSim and Quartus in order to be run on a DE1-SoC circuit board."
+      instructions="A table with the set of instructions that have been implemented in this RISC machine can be found in the README on my github repository by clicking on the DE1-SoC circuit board."
+      image={de1}
+      link="https://github.com/abhiverma13/RISC-Machine">
+      </ProjectLeft>
+      <hr />
+      <ProjectRight className="dojoblog" 
       title= "The Verma Blogs"
       description="My first React application is a blog website where a user can create and post a new blog as well as view other people's blogs. The data is all stored in a local file, however, if I wanted to expand this project I could have used an external database such as MongoDB."
       instructions="Clicking on the logo will take you to my GitHub repository where you can check out the source code as well as download the project."
       image={vermablogs}
       link="https://github.com/abhiverma13/Verma-Blogs">
+      </ProjectRight>
+      <hr />
+      <ProjectLeft className="monsterrpggame" 
+      title= "Monster RPG Game"
+      description="A monster role-playing game that I made using HTML, CSS and JavaScript where one goes through a series of actions to eventually try to defeat the dragon and win the game."
+      instructions="Clicking on the logo will take you to my Replit where you can play the game as well as check out the source code."
+      image={monsterrpggame}
+      link="https://replit.com/@averma1304/Monster-RPG-Game?v=1">
       </ProjectLeft>
       <hr />
       <ProjectRight className="ponggame" 
@@ -74,16 +91,8 @@ const MyProjects = () => {
       image={ponggame}
       link="https://github.com/abhiverma13/Pong-Game">
       </ProjectRight>
-      <hr />
-      <ProjectLeft className="monsterrpggame" 
-      title= "Monster RPG Game"
-      description="A monster role-playing game that I made using HTML, CSS and JavaScript where one goes through a series of actions to eventually try to defeat the dragon and win the game."
-      instructions="Clicking on the logo will take you to my Replit where you can play the game as well as check out the source code."
-      image={monsterrpggame}
-      link="https://replit.com/@averma1304/Monster-RPG-Game?v=1">
-      </ProjectLeft>
       <Parallax className="parallax2" strength={600} bgImage={space2} />
-      <ProjectRight className="gameoflife" 
+      <ProjectLeft className="gameoflife" 
       title= "Game of Life"
       description="​​A simulation invented in 1970 by Cambridge mathematician,
       John Conway, where one creates an initial state of cells and then
@@ -93,17 +102,17 @@ const MyProjects = () => {
       ​can play the game yourself as well as checkout the source code."
       image={gameoflife}
       link="https://replit.com/@averma1304/Game-of-Life?v=1">
-      </ProjectRight>
+      </ProjectLeft>
       <hr />
-      <ProjectLeft className="bankaccount" 
+      <ProjectRight className="bankaccount" 
       title= "Bank Account"
       description="This is Java GUI that I have made which keeps track of the current balance, withdrawals and deposits of two separate bank accounts."
       instructions="Clicking on the image will take you to my Replit where ​you can checkout the GUI yourself as well as checkout the source code."
       image={bankaccount}
       link="https://replit.com/@averma1304/Bank-Account?v=1">
-      </ProjectLeft>
+      </ProjectRight>
       <hr />
-      <ProjectRight className="louisvuitton" 
+      <ProjectLeft className="louisvuitton" 
       title= "Louis Vuitton Logo"
       description="This is a function I created that draws the Louis Vuitton logo
       using Turtle graphics in Python. The function takes in the coordinates,
@@ -113,7 +122,7 @@ const MyProjects = () => {
       ​checkout the source code."
       image={louisvuitton}
       link="https://replit.com/@averma1304/Louis-Vuitton-Logo?v=1">
-      </ProjectRight>
+      </ProjectLeft>
     </div>
   );
 }
