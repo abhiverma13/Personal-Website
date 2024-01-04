@@ -51,10 +51,10 @@ const MyProjects = () => {
       <hr />
       <ProjectRight className="movie-review-app" 
       title= "Movie Review App"
-      description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. It is currently hosted on a Replit server. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
-      instructions="Clicking on the logo to will take you to the website and you can check out the source code on my GitHub."
+      description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
+      instructions="Clicking on the logo to will take you to my GitHub repository where you can check out the code."
       image={moviereviewapp}
-      link="https://movie-app-frontend.averma1304.repl.co/index.html">
+      link="https://github.com/abhiverma13/Movie-Review-App">
       </ProjectRight>
       <Parallax className="parallax2" strength={600} bgImage={space2} />
       <ProjectLeft className="risc-machine" 
