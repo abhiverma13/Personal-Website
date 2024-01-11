@@ -51,7 +51,7 @@ const Home = () => {
             </tr>
             <tr className="skills-title">
               <td><h3>Java</h3></td>
-              <td><h3>C</h3></td>
+              <td><h3>C/C++</h3></td>
               <td><h3>Python</h3></td>
             </tr>
             <tr className="skills-subtitle">
