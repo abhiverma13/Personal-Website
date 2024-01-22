@@ -51,8 +51,8 @@ const MyProjects = () => {
       <hr />
       <ProjectRight className="movie-review-app" 
       title= "Movie Review App"
-      description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
-      instructions="Clicking on the logo to will take you to my GitHub repository where you can check out the code."
+      description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. In addition to using TMDB API, I created my own RESTful API to manage the retrieval and storage of reviews for each movie. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
+      instructions="Clicking on the logo to will take you to my GitHub repository where you can check out what the app looks like as well as the source code."
       image={moviereviewapp}
       link="https://github.com/abhiverma13/Movie-Review-App">
       </ProjectRight>
@@ -76,9 +76,9 @@ const MyProjects = () => {
       <ProjectLeft className="monsterrpggame" 
       title= "Monster RPG Game"
       description="A monster role-playing game that I made using HTML, CSS and JavaScript where one goes through a series of actions to eventually try to defeat the dragon and win the game."
-      instructions="Clicking on the logo will take you to my Replit where you can play the game as well as check out the source code."
+      instructions="Clicking on the logo will take you to my website where you can play the game. You can check out the source code on my GitHub."
       image={monsterrpggame}
-      link="https://replit.com/@averma1304/Monster-RPG-Game?v=1">
+      link="https://abhivermamonsterrpggame.netlify.app/">
       </ProjectLeft>
       <hr />
       <ProjectRight className="ponggame" 
