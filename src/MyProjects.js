@@ -14,6 +14,7 @@ import louisvuitton from './images/louisvuitton.png';
 import cosmicgateway from './images/cosmicgateway.png';
 import de1 from './images/de1.png';
 import spotify from './images/spotify.png';
+import penguin from './images/penguin.png';
 
 const MyProjects = () => {
   useEffect(() => {
@@ -33,12 +34,28 @@ const MyProjects = () => {
       link="https://docs.ubclaunchpad.com/">
       </ProjectLeft>
       <hr />
-      <ProjectRight className="spotify-app" 
+      <ProjectRight className="flappy-pengu" 
+      title= "Flappy Pengu"
+      description="A remake of 2014’s most popular mobile game, I designed and constructed Flappy Pengu using the Unity game engine. In addition to coding in C#, through making this game, I learned fundamental game design principles, including spawning objects, using physics principles, and implementing game logic. This game has a lot of potential for additional features, that I have yet to make, which can be found in the README.md file on my GitHub repository."
+      instructions="Clicking on the logo will take you to my GitHub repository where you can check out what the game looks like or download the code."
+      image={penguin}
+      link="https://github.com/abhiverma13/Flappy-Pengu">
+      </ProjectRight>
+      <hr />
+      <ProjectLeft className="spotify-app" 
       title= "Spotify Playlist Generator"
       description="Frustrated with my gigantic playlist of 500+ songs, I decided to make an app to filter songs out of playlists based on mood such as sad or party. Knowing people like my dad struggle with finding new songs, I also added the feature to find similar songs by inputting seed tracks. This is a Python-based web application developed with Flask and integrated with the Spotify API, offering a user-friendly interface for playlist management and music exploration. Users can authenticate with their Spotify credentials, explore existing playlists, create new ones, and add tracks to both new and existing playlists."
       instructions="Clicking on the logo will take you to my GitHub repository where you can download the code and follow the instructions in the README.md file to use the app."
       image={spotify}
       link="https://github.com/abhiverma13/Spotify-Playlist-Generator">
+      </ProjectLeft>
+      <Parallax className="parallax2" strength={600} bgImage={space2} />
+      <ProjectRight className="movie-review-app" 
+      title= "Movie Review App"
+      description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. In addition to using TMDB API, I created my own RESTful API to manage the retrieval and storage of reviews for each movie. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
+      instructions="Clicking on the logo to will take you to my GitHub repository where you can check out what the app looks like as well as the source code."
+      image={moviereviewapp}
+      link="https://github.com/abhiverma13/Movie-Review-App">
       </ProjectRight>
       <hr />
       <ProjectLeft className="epilog" 
@@ -49,20 +66,20 @@ const MyProjects = () => {
       link="https://github.com/ubclaunchpad/epilog">
       </ProjectLeft>
       <hr />
-      <ProjectRight className="movie-review-app" 
-      title= "Movie Review App"
-      description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. In addition to using TMDB API, I created my own RESTful API to manage the retrieval and storage of reviews for each movie. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
-      instructions="Clicking on the logo to will take you to my GitHub repository where you can check out what the app looks like as well as the source code."
-      image={moviereviewapp}
-      link="https://github.com/abhiverma13/Movie-Review-App">
-      </ProjectRight>
-      <Parallax className="parallax2" strength={600} bgImage={space2} />
-      <ProjectLeft className="risc-machine" 
+      <ProjectRight className="risc-machine" 
       title= "RISC Machine"
       description="A “Reduced Instruction Set Computer” is essentially a simple computer that can execute programs with a small set of instructions. This was a project that was completed in stages, including creating the datapath, a controller for this datapath and finally adding memory and I/O. The RISC machine was made using Verilog and tested on ModelSim and Quartus in order to be run on a DE1-SoC circuit board."
       instructions="A table with the set of instructions that have been implemented in this RISC machine can be found in the README on my github repository by clicking on the DE1-SoC circuit board."
       image={de1}
       link="https://github.com/abhiverma13/RISC-Machine">
+      </ProjectRight>
+      <Parallax className="parallax2" strength={600} bgImage={space2} />
+      <ProjectLeft className="monsterrpggame" 
+      title= "Monster RPG Game"
+      description="A monster role-playing game that I made using HTML, CSS and JavaScript where one goes through a series of actions to eventually try to defeat the dragon and win the game."
+      instructions="Clicking on the logo will take you to my website where you can play the game. You can check out the source code on my GitHub."
+      image={monsterrpggame}
+      link="https://abhivermamonsterrpggame.netlify.app/">
       </ProjectLeft>
       <hr />
       <ProjectRight className="dojoblog" 
@@ -73,15 +90,7 @@ const MyProjects = () => {
       link="https://github.com/abhiverma13/Verma-Blogs">
       </ProjectRight>
       <hr />
-      <ProjectLeft className="monsterrpggame" 
-      title= "Monster RPG Game"
-      description="A monster role-playing game that I made using HTML, CSS and JavaScript where one goes through a series of actions to eventually try to defeat the dragon and win the game."
-      instructions="Clicking on the logo will take you to my website where you can play the game. You can check out the source code on my GitHub."
-      image={monsterrpggame}
-      link="https://abhivermamonsterrpggame.netlify.app/">
-      </ProjectLeft>
-      <hr />
-      <ProjectRight className="ponggame" 
+      <ProjectLeft className="ponggame" 
       title= "Pong Game"
       description="​This is a classic two player game that I created using a Java GUI with an
       increasing speed of the ball after each hit and added sound effects.
@@ -90,9 +99,9 @@ const MyProjects = () => {
       instructions="You can download this game through my GitHub repository by clicking on the image."
       image={ponggame}
       link="https://github.com/abhiverma13/Pong-Game">
-      </ProjectRight>
+      </ProjectLeft>
       <Parallax className="parallax2" strength={600} bgImage={space2} />
-      <ProjectLeft className="gameoflife" 
+      <ProjectRight className="gameoflife" 
       title= "Game of Life"
       description="​​A simulation invented in 1970 by Cambridge mathematician,
       John Conway, where one creates an initial state of cells and then
@@ -102,17 +111,17 @@ const MyProjects = () => {
       ​can play the game yourself as well as checkout the source code."
       image={gameoflife}
       link="https://replit.com/@averma1304/Game-of-Life?v=1">
-      </ProjectLeft>
+      </ProjectRight>
       <hr />
-      <ProjectRight className="bankaccount" 
+      <ProjectLeft className="bankaccount" 
       title= "Bank Account"
       description="This is Java GUI that I have made which keeps track of the current balance, withdrawals and deposits of two separate bank accounts."
       instructions="Clicking on the image will take you to my Replit where ​you can checkout the GUI yourself as well as checkout the source code."
       image={bankaccount}
       link="https://replit.com/@averma1304/Bank-Account?v=1">
-      </ProjectRight>
+      </ProjectLeft>
       <hr />
-      <ProjectLeft className="louisvuitton" 
+      <ProjectRight className="louisvuitton" 
       title= "Louis Vuitton Logo"
       description="This is a function I created that draws the Louis Vuitton logo
       using Turtle graphics in Python. The function takes in the coordinates,
@@ -122,7 +131,7 @@ const MyProjects = () => {
       ​checkout the source code."
       image={louisvuitton}
       link="https://replit.com/@averma1304/Louis-Vuitton-Logo?v=1">
-      </ProjectLeft>
+      </ProjectRight>
     </div>
   );
 }
