@@ -127,6 +127,9 @@ hr{
 }
 
 /*specifics*/
+.flappy-pengu img {
+  height: 25vh;
+}
 .spotify-app img {
   height: 25vh;
 }
