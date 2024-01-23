@@ -203,7 +203,7 @@ const Home = () => {
       <Parallax className="parallax1" strength={600} bgImage={space1} />
       <div className="quote">
         <div className="quote-text">
-          <p>"Intellectual growth should commence<br />at birth and cease only at death. ​”</p>
+          <p>“Creativity is intelligence having fun”</p>
         </div>
         <div className="quote-author">
           <p>-Albert Einstein</p>
