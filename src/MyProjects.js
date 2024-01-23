@@ -36,7 +36,7 @@ const MyProjects = () => {
       <hr />
       <ProjectRight className="flappy-pengu" 
       title= "Flappy Pengu"
-      description="A remake of 2014’s most popular mobile game Flappy Bird, I designed and constructed Flappy Pengu using the Unity game engine. In addition to coding in C#, through making this game, I learned fundamental game design principles, including spawning objects, using physics principles, and implementing game logic. This game has a lot of potential for additional features, that I have yet to make, which can be found in the README.md file on my GitHub repository."
+      description="A remake of 2014’s most popular mobile game Flappy Bird, I designed and constructed Flappy Pengu using the Unity game engine. In addition to coding in C#, I learned fundamental game design principles through making this game, including spawning objects, using physics principles, and implementing game logic. This game has a lot of potential for additional features, that I have yet to make, which can be found in the README.md file on my GitHub repository."
       instructions="Clicking on the logo will take you to my GitHub repository where you can check out what the game looks like or download the code."
       image={penguin}
       link="https://github.com/abhiverma13/Flappy-Pengu">
