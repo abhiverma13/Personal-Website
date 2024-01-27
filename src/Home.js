@@ -43,7 +43,7 @@ const Home = () => {
         <h2 className='skills-heading'>Skills</h2>
         <div className="tables">
           <table className="skills-table">
-            <caption><h1><i class="fa-solid fa-code"></i> Languages</h1></caption>
+            <caption><h1><i class="fa-solid fa-code"></i> Programming Languages</h1></caption>
             <tr className="skills-images">
               <td><img src={java} alt="java" /></td>
               <td><img src={c} alt="c" /></td>
