@@ -14,7 +14,7 @@ footer {
   padding: 5px;
   background-color: white;
   margin: 10px;
-  border-radius: 50%;
+  border-radius: 60%;
 }
 .social-icons a i {
   font-size: 1.5em;
@@ -23,11 +23,11 @@ footer {
 }
 .social-icons a:hover {
   background-color: #111;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .social-icons a i:hover {
   color: white;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .footer-bottom {
   padding-top: 20px;

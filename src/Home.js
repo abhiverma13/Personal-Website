@@ -19,7 +19,8 @@ import arduino from './images/arduino.png';
 import verilog from './images/verilog.png';
 import arm from './images/arm.png';
 import typescript from './images/typescript.png';
-import svelte from './images/svelte.png';
+import graphql from './images/graphql.svg';
+import aws from './images/aws.svg';
 import learner from './images/learner.png'
 import solver from './images/solver.png';
 import leader from './images/leader.png';
@@ -75,13 +76,13 @@ const Home = () => {
               <td><h3>Intermediate</h3></td>
             </tr>
             <tr className="skills-images">
-              <td></td>
               <td><img src={typescript} alt="typescript" /></td>
+              <td><img src={graphql} alt="graphql" /></td>
               <td></td>
             </tr>
             <tr className="skills-title">
-              <td><h3> </h3></td>
               <td><h3>TypeScript</h3></td>
+              <td><h3>GraphQL</h3></td>
               <td><h3> </h3></td>
             </tr>
             <tr className="skills-subtitle">
@@ -93,13 +94,13 @@ const Home = () => {
           <table className="skills-table2">
           <caption><h1><i class="fa-solid fa-database"></i> Software Tools</h1></caption>
             <tr className="skills-images">
+              <td><img src={aws} alt="aws" /></td>
               <td><img src={react} alt="react" /></td>
-              <td><img src={svelte} alt="svelte" /></td>
               <td><img src={flutter} alt="flutter" /></td>
             </tr>
             <tr className="skills-title">
+              <td><h3>AWS</h3></td>
               <td><h3>React</h3></td>
-              <td><h3>Svelte</h3></td>
               <td><h3>Flutter</h3></td>
             </tr>
             <tr className="skills-subtitle">
