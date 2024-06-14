@@ -14,10 +14,6 @@ import mongodb from './images/mongodb.png';
 import nodejs from './images/nodejs.png';
 import express from './images/express.png';
 import git from './images/git.png';
-import matlab from './images/matlab.png';
-import arduino from './images/arduino.png';
-import verilog from './images/verilog.png';
-import arm from './images/arm.png';
 import typescript from './images/typescript.png';
 import graphql from './images/graphql.svg';
 import aws from './images/aws.svg';
@@ -138,7 +134,7 @@ const Home = () => {
             <tr>
               <td><h3>Node.js</h3></td>
               <td><h3>Express.js</h3></td>
-              <td><h3></h3></td>
+              <td></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Basic</h3></td>
