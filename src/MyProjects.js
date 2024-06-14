@@ -28,8 +28,8 @@ const MyProjects = () => {
       </div>
       <ProjectLeft className="cosmic-gateway" 
       title= "Cosmic Gateway"
-      description="Cosmic Gateway manages UBC Launch Pad’s internal club tools, which encompass everything that is used by our club leads, admin work and members. As part of the Wiki sub-team, I have worked on our web application that was constructed using Svelte and effectively manages our documents stored on AWS S3. This full-stack project involved implementing the UI designs made by our team of designers on the front-end. Additionally, we used an intermediary SQL database to query, search, filter and store metadata (who last edited the documents, when were they updated, etc.), which will also need to be synced with the S3 bucket. This was an ongoing project for the 2023-2024 academic year."
-      instructions="Clicking on the logo will take you to the current Launch Pad Docs, which is still a work-in-progress."
+      description="Cosmic Gateway manages UBC Launch Pad’s internal club tools, which encompass everything that is used by our club leads, admin work and members. As part of the Wiki sub-team, I have worked on our web application that was constructed using Svelte and effectively manages our documents stored on AWS S3. This full-stack project involved implementing the UI designs made by our team of designers on the front-end. Additionally, we used an intermediary SQL database to query, search, filter and store metadata (who last edited the documents, when were they updated, etc.), which will also need to be synced with the S3 bucket."
+      instructions="Clicking on the logo will take you to the current Launch Pad Docs."
       image={cosmicgateway}
       link="https://www.ubclaunchpad.com/docs">
       </ProjectLeft>
