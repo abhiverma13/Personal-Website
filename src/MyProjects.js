@@ -34,12 +34,12 @@ const MyProjects = () => {
       link="https://www.ubclaunchpad.com/docs">
       </ProjectLeft>
       <hr />
-      <ProjectRight className="flappy-pengu" 
-      title= "Flappy Pengu"
-      description="A remake of 2014’s most popular mobile game Flappy Bird, I designed and constructed Flappy Pengu using the Unity game engine. In addition to coding in C#, I learned fundamental game design principles through making this game, including spawning objects, using physics principles, and implementing game logic. This game has a lot of potential for additional features, that I have yet to make, which can be found in the README.md file on my GitHub repository."
-      instructions="Clicking on the logo will take you to my GitHub repository where you can check out what the game looks like or download the code."
-      image={penguin}
-      link="https://github.com/abhiverma13/Flappy-Pengu">
+      <ProjectRight className="movie-review-app" 
+      title= "Movie Review App"
+      description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. In addition to using TMDB API, I created my own RESTful API to manage the retrieval and storage of reviews for each movie. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
+      instructions="Clicking on the logo to will take you to my GitHub repository where you can check out what the app looks like as well as the source code."
+      image={moviereviewapp}
+      link="https://github.com/abhiverma13/Movie-Review-App">
       </ProjectRight>
       <hr />
       <ProjectLeft className="spotify-app" 
@@ -50,20 +50,20 @@ const MyProjects = () => {
       link="https://github.com/abhiverma13/Spotify-Playlist-Generator">
       </ProjectLeft>
       <Parallax className="parallax2" strength={600} bgImage={space2} />
-      <ProjectRight className="movie-review-app" 
-      title= "Movie Review App"
-      description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. In addition to using TMDB API, I created my own RESTful API to manage the retrieval and storage of reviews for each movie. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
-      instructions="Clicking on the logo to will take you to my GitHub repository where you can check out what the app looks like as well as the source code."
-      image={moviereviewapp}
-      link="https://github.com/abhiverma13/Movie-Review-App">
-      </ProjectRight>
-      <hr />
-      <ProjectLeft className="epilog" 
+      <ProjectRight className="epilog" 
       title= "EpiLog"
       description="EpiLog is a mobile health app designed by UBC Launch Pad to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
       instructions="Clicking on the logo will take you to Launch Pad's GitHub where you can download the app as well as checkout other projects that our team has been working on."
       image={epilog}
       link="https://github.com/ubclaunchpad/epilog">
+      </ProjectRight>
+      <hr />
+      <ProjectLeft className="flappy-pengu" 
+      title= "Flappy Pengu"
+      description="A remake of 2014’s most popular mobile game Flappy Bird, I designed and constructed Flappy Pengu using the Unity game engine. In addition to coding in C#, I learned fundamental game design principles through making this game, including spawning objects, using physics principles, and implementing game logic. This game has a lot of potential for additional features, that I have yet to make, which can be found in the README.md file on my GitHub repository."
+      instructions="Clicking on the logo will take you to my GitHub repository where you can check out what the game looks like or download the code."
+      image={penguin}
+      link="https://github.com/abhiverma13/Flappy-Pengu">
       </ProjectLeft>
       <hr />
       <ProjectRight className="risc-machine" 
