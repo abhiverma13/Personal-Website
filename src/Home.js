@@ -21,6 +21,13 @@ import arm from './images/arm.png';
 import typescript from './images/typescript.png';
 import graphql from './images/graphql.svg';
 import aws from './images/aws.svg';
+import sql from './images/sql.svg';
+import svelte from './images/svelte.png';
+import jest from './images/jest.png';
+import junit from './images/junit.png';
+import flask from './images/flask.png';
+import linux from './images/linux.svg';
+import planetscale from './images/planetscale.jpg';
 import learner from './images/learner.png'
 import solver from './images/solver.png';
 import leader from './images/leader.png';
@@ -77,13 +84,13 @@ const Home = () => {
             </tr>
             <tr className="skills-images">
               <td><img src={typescript} alt="typescript" /></td>
+              <td><img src={sql} alt="sql" /></td>
               <td><img src={graphql} alt="graphql" /></td>
-              <td></td>
             </tr>
             <tr className="skills-title">
               <td><h3>TypeScript</h3></td>
+              <td><h3>SQL</h3></td>
               <td><h3>GraphQL</h3></td>
-              <td><h3> </h3></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Intermediate</h3></td>
@@ -92,15 +99,15 @@ const Home = () => {
             </tr>
           </table>
           <table className="skills-table2">
-          <caption><h1><i class="fa-solid fa-database"></i> Software Tools</h1></caption>
+          <caption><h1><i class="fa-solid fa-gear"></i> Frameworks and Libraries</h1></caption>
             <tr className="skills-images">
-              <td><img src={aws} alt="aws" /></td>
               <td><img src={react} alt="react" /></td>
+              <td><img src={svelte} alt="svelte" /></td>
               <td><img src={flutter} alt="flutter" /></td>
             </tr>
             <tr className="skills-title">
-              <td><h3>AWS</h3></td>
               <td><h3>React</h3></td>
+              <td><h3>Svelte</h3></td>
               <td><h3>Flutter</h3></td>
             </tr>
             <tr className="skills-subtitle">
@@ -108,64 +115,70 @@ const Home = () => {
               <td><h3>Intermediate</h3></td>
               <td><h3>Basic</h3></td>
             </tr>
+            <tr className="skills-images">
+              <td><img id="jest" src={jest} alt="jest" /></td>
+              <td><img src={junit} alt="git" /></td>
+              <td><img src={flask} alt="flask" /></td>
+            </tr>
+            <tr className="skills-title">
+              <td><h3>Jest</h3></td>
+              <td><h3>JUnit</h3></td>
+              <td><h3>Flask</h3></td>
+            </tr>
+            <tr className="skills-subtitle">
+              <td><h3>Intermediate</h3></td>
+              <td><h3>Basic</h3></td>
+              <td><h3>Basic</h3></td>
+            </tr>
             <tr>
               <td><img src={nodejs} alt="nodejs" /></td>
               <td><img src={express} alt="express" /></td>
-              <td><img src={mongodb} alt="mongodb" /></td>
+              <td></td>
             </tr>
             <tr>
               <td><h3>Node.js</h3></td>
               <td><h3>Express.js</h3></td>
-              <td><h3>MongoDB</h3></td>
+              <td><h3></h3></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Basic</h3></td>
               <td><h3>Basic</h3></td>
               <td><h3>Intermediate</h3></td>
-            </tr>
-            <tr className="skills-images">
-              <td></td>
-              <td><img src={git} alt="git" /></td>
-              <td></td>
-            </tr>
-            <tr className="skills-title">
-              <td><h3> </h3></td>
-              <td><h3>Git</h3></td>
-              <td><h3> </h3></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Basic</h3></td>
-              <td><h3>Basic</h3></td>
             </tr>
           </table>
         </div>
       </div>
       <div className="lasttable">
           <table className="skills-table3">
-          <caption><h1><i class="fa fa-wrench"></i> Other Tools</h1></caption>
+          <caption><h1><i class="fa fa-wrench"></i> Software Tools</h1></caption>
             <tr>
-              <td><img src={matlab} alt="matlab" /></td>
-              <td><img src={verilog} alt="verilog" /></td>
+              <td><img src={aws} alt="aws" /></td>
+              <td><img src={linux} alt="linux" /></td>
+              <td><img src={git} alt="git" /></td>
             </tr>
             <tr>
-              <td><h3>MATLAB</h3></td>
-              <td><h3>Verilog</h3></td>
+              <td><h3>AWS</h3></td>
+              <td><h3>Linux/Unix</h3></td>
+              <td><h3>Git</h3></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Basic</h3></td>
               <td><h3>Intermediate</h3></td>
+              <td><h3>Intermediate</h3></td>
             </tr>
             <tr>
-              <td><img src={arduino} alt="arduino" /></td>
-              <td><img src={arm} alt="arm" /></td>
+              <td><img src={mongodb} alt="mongodb" /></td>
+              <td><img src={planetscale} alt="planetscale" /></td>
+              <td></td>
             </tr>
             <tr>
-              <td><h3>Arduino</h3></td>
-              <td><h3>ARMv7</h3></td>
+              <td><h3>MongoDB</h3></td>
+              <td><h3>PlanetScale</h3></td>
+              <td></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Basic</h3></td>
+              <td><h3>Intermediate</h3></td>
               <td><h3>Intermediate</h3></td>
             </tr>
           </table>
