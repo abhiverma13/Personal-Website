@@ -31,7 +31,7 @@ const MyProjects = () => {
       description="Cosmic Gateway manages UBC Launch Pad’s internal club tools, which encompass everything that is used by our club leads, admin work and members. As part of the Wiki sub-team, I have worked on our web application that was constructed using Svelte and effectively manages our documents stored on AWS S3. This full-stack project involves implementing the UI designs made by our team of designers on the front-end. Additionally, we want to store metadata (who last edited the documents, when were they updated, etc.) in an intermediary database that will be used to query, search, filter and store sensitive information. We are currently working on implementing this with a SQL database, PlanetScale, which will also need to be synced with the S3 bucket. This will be an ongoing project for the 2023-2024 academic year."
       instructions="Clicking on the logo will take you to the current Launch Pad Docs, which is still a work-in-progress."
       image={cosmicgateway}
-      link="https://docs.ubclaunchpad.com/">
+      link="https://www.ubclaunchpad.com/docs">
       </ProjectLeft>
       <hr />
       <ProjectRight className="flappy-pengu" 
