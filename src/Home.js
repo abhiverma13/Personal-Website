@@ -85,12 +85,12 @@ const Home = () => {
             <tr className="skills-images">
               <td><img src={typescript} alt="typescript" /></td>
               <td><img src={sql} alt="sql" /></td>
-              <td><img src={graphql} alt="graphql" /></td>
+              <td></td>
             </tr>
             <tr className="skills-title">
               <td><h3>TypeScript</h3></td>
               <td><h3>SQL</h3></td>
-              <td><h3>GraphQL</h3></td>
+              <td></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Intermediate</h3></td>
@@ -167,14 +167,14 @@ const Home = () => {
               <td><h3>Intermediate</h3></td>
             </tr>
             <tr>
+              <td><img src={graphql} alt="graphql" /></td>
               <td><img src={mongodb} alt="mongodb" /></td>
               <td><img src={planetscale} alt="planetscale" /></td>
-              <td></td>
             </tr>
             <tr>
+              <td><h3>GraphQL</h3></td>
               <td><h3>MongoDB</h3></td>
               <td><h3>PlanetScale</h3></td>
-              <td></td>
             </tr>
             <tr className="skills-subtitle">
               <td><h3>Basic</h3></td>
