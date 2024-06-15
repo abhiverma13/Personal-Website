@@ -213,10 +213,10 @@ const Home = () => {
       <Parallax className="parallax1" strength={600} bgImage={space1} />
       <div className="quote">
         <div className="quote-text">
-          <p>“Creativity is intelligence having fun”</p>
+          <p>“Software is a great combination between artistry and engineering”</p>
         </div>
         <div className="quote-author">
-          <p>-Albert Einstein</p>
+          <p>-Bill Gates</p>
         </div>
       </div>
     </div>
