@@ -196,7 +196,19 @@ hr{
     padding-bottom: 5vh;
   }
 }
-@media (max-width: 420px) {
+@media (max-width: 450px) {
+  .cosmic-gateway img {
+    height: 20vh;
+  }
+  .risc-machine img {
+    height: 20vh;
+  }
+  .spotify-app img {
+    height: 20vh;
+  }
+  .flappy-pengu img {
+    height: 20vh;
+  }
   .epilog img {
     height: 25vh;
   }

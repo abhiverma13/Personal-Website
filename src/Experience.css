@@ -34,6 +34,9 @@ hr{
 }
 
 /*specifics*/
+.ubccic img {
+  width: 70vh;
+}
 .ubclaunchpad img {
   height: 30vh;
 }
@@ -50,7 +53,10 @@ iframe {
   padding-left: 5vh;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1100px) {
+  .ubccic img {
+    width: 50vh;
+  }
   .ubclaunchpad img {
     height: 25vh;
   }
@@ -73,6 +79,9 @@ iframe {
   }
 }
 @media (max-width: 700px) {
+  .ubccic img {
+    width: 35vh;
+  }
   .experience-heading {
     font-size: 4vh;
     padding-bottom: 4vh;
@@ -88,9 +97,12 @@ iframe {
   }
   iframe {
     height: 30vh;
-    width: 40vh;
+    width: 35vh;
   }
   .alibid img {
     height: 20vh;
   }
+}
+@media (max-width: 450px) {
+  
 }
