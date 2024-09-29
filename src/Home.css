@@ -77,8 +77,10 @@
   background-image: url('./images/starbackground.jpg');
   background-size: cover;
   background-repeat: no-repeat;
-  height: 850px;
+  overflow: hidden;
+  white-space: nowrap;
 }
+
 .skills-heading {
   font-size: 40px;
   text-align: center;
@@ -88,49 +90,72 @@
   margin-right: 40%;
   background-color: black;
 }
-.skills-table {
-  background-color: black;
+
+.skills-table, .skills-table2, .skills-table3 {
   text-align: center;
-  padding: 50px 0;
-  float: left;
-  width: 40%;
-  margin-right: 10%;
-  margin-left: 5%;
+  padding-top: 50px;
+  width: 100%;
+  margin-bottom: 20px;
 }
-.skills-table caption {
+
+.skills-table h1, .skills-table2 h1, .skills-table3 h1 {
+  text-align: center;
   background-color: black;
-  padding-top: 40px;
-  font-size: 15px;
+  font-size: 25px;
 }
-.skills-table img {
+
+.skills-pairs {
+  display: flex;
+  animation: scroll-left 10s linear infinite;
+}
+
+.skill-pair {
+  background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.skills-table2 .skills-pairs {
+  animation: scroll-right 10s linear infinite;
+}
+
+.skills-table3 .skills-pairs {
+  animation: scroll-left 10s linear infinite;
+}
+
+@keyframes scroll-left {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } /* Move by half to enable smooth transition */
+}
+
+@keyframes scroll-right {
+  0% { transform: translateX(-50%); }
+  100% { transform: translateX(0%); } /* Move by half to enable smooth transition */
+}
+
+.skills-pairs:hover {
+  animation-play-state: paused;
+}
+
+.skill-pair {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px 60px;
+}
+
+.skill-pair img {
   max-height: 80px;
   padding-top: 20px;
+  transition: transform 0.3s;
 }
-.skills-subtitle h3{
-  font-size: 15px;
-  color: gray;
-  visibility: hidden;
+
+.skill-pair:hover {
+  transform: scale(1.2);
 }
-.skills-title h3{
+
+.skill-pair h3 {
   padding-top: 10px;
 }
 
-.skills-table2 {
-  background-color: black;
-  text-align: center;
-  padding: 50px 0;
-  float: left;
-  width: 35%;
-}
-.skills-table2 caption {
-  background-color: black;
-  padding-top: 40px;
-  font-size: 15px;
-}
-.skills-table2 img {
-  max-height: 80px;
-  padding-top: 20px;
-}
 .lasttable {
   background-image: url('./images/starbackground.jpg');
   background-size: cover;
@@ -139,115 +164,12 @@
   justify-content: center;
   padding-bottom: 20px;
 }
-.skills-table3 {
-  background-color: black;
-  text-align: center;
-  padding: 50px 0;
-  width: 30%;
-}
-.skills-table3 caption {
-  background-color: black;
-  padding-top: 40px;
-  font-size: 15px;
-}
-.skills-table3 img {
-  max-height: 80px;
-  padding-top: 20px;
-}
 
 @media (max-width: 1440px) {
-  .skills {
-    height: 900px;
-  }
+  
 }
 
-@media (max-width: 1100px) {
-  .skills {
-    height: 950px;
-  }
-  .skills-table3 {
-    width: 50%;
-  }
-}
 
-@media (max-width: 800px) {
-  .skills {
-    text-align: center;
-    height: 1650px;
-    background-repeat: repeat;
-    background-size: contain;
-  }
-  .skills-heading {
-    font-size: 5vh;
-    margin-left: 25%;
-    margin-right: 25%;
-    margin-bottom: 5vh;
-    padding: 5vh 0;
-  }
-  .tables {
-    display:inline-block;
-  }
-  .skills-table {
-    float: none;
-    margin: 0;
-    width: 100%;
-    padding-left: 2vh;
-    padding-right: 2vh;
-    margin-bottom: 5vh;
-  }
-  .skills-table caption {
-    font-size: 2vh;
-  }
-  .skills-table2 {
-    float: none;
-    width: 100%;
-  }
-  .skills-table2 caption {
-    font-size: 2vh;
-  }
-  .skills-subtitle h3 {
-    padding-left: 1vh;
-    padding-right: 1vh;
-  }
-}
-@media (max-width: 430px) {
-  .skills {
-    height: 1250px;
-  }
-  .skills-table {
-    padding: 0;
-  }
-  .skills-table caption {
-    font-size: 1.5vh;
-  }
-  .skills-table2 {
-    padding: 0;
-  }
-  .skills-table2 caption {
-    font-size: 1.5vh;
-  }
-  .skills-table img {
-    max-height: 60px;
-  }
-  .skills-table2 img {
-    max-height: 60px;
-  }
-  .skills-table3 img {
-    max-height: 60px;
-  }
-  .skills-table3 caption {
-    font-size: 1.5vh;
-  }
-  .skills-heading {
-    font-size: 4vh;
-  }
-  .skills-title h3 {
-    font-size: 2vh;
-  }
-  .skills h1 {
-    font-size: 3vh;
-  }
-}
 
 /*strengths*/
 .strengths {

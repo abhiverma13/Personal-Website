@@ -15,6 +15,7 @@ import cosmicgateway from './images/cosmicgateway.png';
 import de1 from './images/de1.png';
 import spotify from './images/spotify.png';
 import penguin from './images/penguin.png';
+import facultyCV from './images/facultyCV.svg';
 
 const MyProjects = () => {
   useEffect(() => {
@@ -26,22 +27,30 @@ const MyProjects = () => {
       <div className="my-projects-heading">
         You can checkout all my projects on my <a href="https://github.com/abhiverma13" target="_blank" rel="noreferrer">GitHub</a> profile.
       </div>
-      <ProjectLeft className="cosmic-gateway" 
+      <ProjectLeft className="facultyCV" 
+      title= "Faculty CV"
+      description="This project involved engineering an AWS and React-powered platform for the UBC Faculty of Medicine to streamline the creation of Curriculum Vitae (CVs), significantly enhancing operational efficiency across 19 departments, 3 schools, and 25 research centers. By integrating external data sources and datasets, the platform developed robust pipelines to fetch, clean, and store raw data from APIs and CSV files uploaded to Amazon S3 buckets into a relational database (RDS PostgreSQL). Additionally, the project automated the CV generation process using a Lambda function hosted in a Docker container, efficiently converting LaTeX files into PDFs. This comprehensive solution alleviated the administrative burden on faculty members, allowing them to focus more on their research and clinical duties while ensuring standardized and accessible CVs."
+      instructions="Clicking on the logo will take you to the GitHub repository where you can download it and follow the instructions in the deployment guide to use the app yourself. There is also detailed documentation on the project architecture and a user guide to help you navigate the app."
+      image={facultyCV}
+      link="https://github.com/UBC-CIC/FacultyCV">
+      </ProjectLeft>
+      <hr />
+      <ProjectRight className="cosmic-gateway" 
       title= "Cosmic Gateway"
       description="Cosmic Gateway manages UBC Launch Pad’s internal club tools, which encompass everything that is used by our club leads, admin work and members. As part of the Wiki sub-team, I have worked on our web application that was constructed using Svelte and effectively manages our documents stored on AWS S3. This full-stack project involved implementing the UI designs made by our team of designers on the front-end. Additionally, we used an intermediary SQL database to query, search, filter and store metadata (who last edited the documents, when were they updated, etc.), which will also need to be synced with the S3 bucket."
       instructions="Clicking on the logo will take you to the current Launch Pad Docs."
       image={cosmicgateway}
       link="https://www.ubclaunchpad.com">
-      </ProjectLeft>
+      </ProjectRight>
       <hr />
-      <ProjectRight className="spotify-app" 
+      <ProjectLeft className="spotify-app" 
       title= "Spotify Playlist Generator"
       description="Frustrated with my gigantic playlist of 500+ songs, I decided to make an app to filter songs out of playlists based on mood such as sad or party. Knowing people like my dad struggle with finding new songs, I also added the feature to find similar songs by inputting seed tracks. This is a Python-based web application developed with Flask and integrated with the Spotify API, offering a user-friendly interface for playlist management and music exploration. Users can authenticate with their Spotify credentials, explore existing playlists, create new ones, and add tracks to both new and existing playlists."
       instructions="Clicking on the logo will take you to my GitHub repository where you can download the code and follow the instructions in the README.md file to use the app."
       image={spotify}
       link="https://github.com/abhiverma13/Spotify-Playlist-Generator">
-      </ProjectRight>
-      <hr />
+      </ProjectLeft>
+      <Parallax className="parallax2" strength={600} bgImage={space2} />
       <ProjectLeft className="movie-review-app" 
       title= "Movie Review App"
       description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. In addition to using TMDB API, I created my own RESTful API to manage the retrieval and storage of reviews for each movie. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
@@ -49,7 +58,7 @@ const MyProjects = () => {
       image={moviereviewapp}
       link="https://github.com/abhiverma13/Movie-Review-App">
       </ProjectLeft>
-      <Parallax className="parallax2" strength={600} bgImage={space2} />
+      <hr />
       <ProjectRight className="epilog" 
       title= "EpiLog"
       description="EpiLog is a mobile health app designed by UBC Launch Pad to assist individuals with epilepsy and their caregivers in tracking seizures. Consistent monitoring is crucial for successful epilepsy treatment, and this app consolidates epilepsy management tasks into a single platform that can be conveniently shared with others. This app was built using Flutter, Express.js and Firebase. While working on the frontend of the project, I gained valuable experience with Flutter and learned how to design an attractive and interactive user interface."
@@ -65,7 +74,7 @@ const MyProjects = () => {
       image={penguin}
       link="https://github.com/abhiverma13/Flappy-Pengu">
       </ProjectLeft>
-      <hr />
+      <Parallax className="parallax2" strength={600} bgImage={space2} />
       <ProjectRight className="risc-machine" 
       title= "RISC Machine"
       description="A “Reduced Instruction Set Computer” is essentially a simple computer that can execute programs with a small set of instructions. This was a project that was completed in stages, including creating the datapath, a controller for this datapath and finally adding memory and I/O. The RISC machine was made using Verilog and tested on ModelSim and Quartus in order to be run on a DE1-SoC circuit board."
@@ -73,7 +82,7 @@ const MyProjects = () => {
       image={de1}
       link="https://github.com/abhiverma13/RISC-Machine">
       </ProjectRight>
-      <Parallax className="parallax2" strength={600} bgImage={space2} />
+      <hr />
       <ProjectLeft className="monsterrpggame" 
       title= "Monster RPG Game"
       description="A monster role-playing game that I made using HTML, CSS and JavaScript where one goes through a series of actions to eventually try to defeat the dragon and win the game."
@@ -89,7 +98,7 @@ const MyProjects = () => {
       image={vermablogs}
       link="https://github.com/abhiverma13/Verma-Blogs">
       </ProjectRight>
-      <hr />
+      <Parallax className="parallax2" strength={600} bgImage={space2} />
       <ProjectLeft className="ponggame" 
       title= "Pong Game"
       description="​This is a classic two player game that I created using a Java GUI with an
@@ -100,7 +109,7 @@ const MyProjects = () => {
       image={ponggame}
       link="https://github.com/abhiverma13/Pong-Game">
       </ProjectLeft>
-      <Parallax className="parallax2" strength={600} bgImage={space2} />
+      <hr />
       <ProjectRight className="gameoflife" 
       title= "Game of Life"
       description="​​A simulation invented in 1970 by Cambridge mathematician,
@@ -120,18 +129,6 @@ const MyProjects = () => {
       image={bankaccount}
       link="https://replit.com/@averma1304/Bank-Account?v=1">
       </ProjectLeft>
-      <hr />
-      <ProjectRight className="louisvuitton" 
-      title= "Louis Vuitton Logo"
-      description="This is a function I created that draws the Louis Vuitton logo
-      using Turtle graphics in Python. The function takes in the coordinates,
-      ​size and angle at which to draw the logo."
-      instructions="Clicking on the image will take you to my Replit
-      where you can see the logo being drawn yourself as well as
-      ​checkout the source code."
-      image={louisvuitton}
-      link="https://replit.com/@averma1304/Louis-Vuitton-Logo?v=1">
-      </ProjectRight>
     </div>
   );
 }

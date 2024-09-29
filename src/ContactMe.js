@@ -81,9 +81,9 @@ const ContactMe = () => {
       <div className="contactmecontainer">
           <div className="getintouch">
           <h1>Get in Touch.</h1>
-          <p>Feel free to reach out to me using the form on the right. My LinkedIn, Instagram and email are also located at the bottom of the page.</p>
+          <p>Feel free to reach out to me through my LinkedIn, Instagram and email located at the bottom of the page.</p>
         </div>
-        <form className="form" ref={form} onSubmit={sendEmail}>
+        {/* <form className="form" ref={form} onSubmit={sendEmail}>
           <div className="formlabel">
             <label>Name</label>
           </div>
@@ -109,7 +109,7 @@ const ContactMe = () => {
           <div className="submitsection">
             <input className="submit" type="submit" value="Send" />
           </div>
-        </form>
+        </form> */}
       </div>
       
     </div>

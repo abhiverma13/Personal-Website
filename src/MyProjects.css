@@ -127,6 +127,9 @@ hr{
 }
 
 /*specifics*/
+.facultyCV img {
+  height: 30vh;
+}
 .flappy-pengu img {
   height: 25vh;
 }
@@ -140,7 +143,7 @@ hr{
   height: 30vh;
 }
 .epilog img {
-  height: 40vh;
+  height: 30vh;
 }
 .movie-review-app img {
   height: 40vh;
@@ -163,7 +166,7 @@ hr{
 .louisvuitton img {
   height: 30vh;
 }
-@media (max-width: 700px) {
+@media (max-width: 800px) {
   .my-projects-heading {
     font-size: 4vh;
     padding-bottom: 4vh;
@@ -174,29 +177,12 @@ hr{
   .project-content-right p {
     font-size: 2vh;
   }
-  .movie-review-app p {
+  p {
     padding-bottom: 5vh;
   }
-  .dojoblog p {
-    padding-bottom: 5vh;
+  .facultyCV img {
+    height: 25vh;
   }
-  .monsterrpggame p {
-    padding-bottom: 5vh;
-  }
-  .ponggame p {
-    padding-bottom: 5vh;
-  }
-  .gameoflife p {
-    padding-bottom: 5vh;
-  }
-  .bankaccount p {
-    padding-bottom: 5vh;
-  }
-  .louisvuitton p {
-    padding-bottom: 5vh;
-  }
-}
-@media (max-width: 450px) {
   .cosmic-gateway img {
     height: 20vh;
   }
@@ -210,7 +196,7 @@ hr{
     height: 20vh;
   }
   .epilog img {
-    height: 25vh;
+    height: 20vh;
   }
   .movie-review-app img {
     height: 30vh;
@@ -232,5 +218,46 @@ hr{
   }
   .louisvuitton img {
     height: 20vh;
+  }
+}
+@media (max-width: 450px) {
+  .facultyCV img {
+    height: 15vh;
+  }
+  .cosmic-gateway img {
+    height: 15vh;
+  }
+  .risc-machine img {
+    height: 15vh;
+  }
+  .spotify-app img {
+    height: 15vh;
+  }
+  .flappy-pengu img {
+    height: 15vh;
+  }
+  .epilog img {
+    height: 20vh;
+  }
+  .movie-review-app img {
+    height: 25vh;
+  }
+  .dojoblog img {
+    height: 15vh;
+  }
+  .monsterrpggame img {
+    height: 15vh;
+  }
+  .ponggame img {
+    width: 25vh;
+  }
+  .gameoflife img {
+    height: 20vh;
+  }
+  .bankaccount img {
+    height: 15vh;
+  }
+  .louisvuitton img {
+    height: 15vh;
   }
 }

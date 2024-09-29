@@ -17,7 +17,10 @@ import git from './images/git.png';
 import typescript from './images/typescript.png';
 import graphql from './images/graphql.svg';
 import aws from './images/aws.svg';
-import sql from './images/sql.svg';
+import sql from './images/sql.png';
+import docker from './images/docker.png';
+import pandas from './images/pandas.png';
+import numpy from './images/numpy.png';
 import svelte from './images/svelte.png';
 import jest from './images/jest.png';
 import junit from './images/junit.png';
@@ -46,139 +49,216 @@ const Home = () => {
       <div className="skills">
         <h2 className='skills-heading'>Skills</h2>
         <div className="tables">
-          <table className="skills-table">
-            <caption><h1><i class="fa-solid fa-code"></i> Programming Languages</h1></caption>
-            <tr className="skills-images">
-              <td><img src={java} alt="java" /></td>
-              <td><img src={c} alt="c" /></td>
-              <td><img src={python} alt="python" /></td>
-            </tr>
-            <tr className="skills-title">
-              <td><h3>Java</h3></td>
-              <td><h3>C/C++</h3></td>
-              <td><h3>Python</h3></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Basic</h3></td>
-              <td><h3>Basic</h3></td>
-            </tr>
-            <tr className="skills-images">
-              <td><img src={html} alt="html" /></td>
-              <td><img src={css} alt="css" /></td>
-              <td><img src={js} alt="js" /></td>
-            </tr>
-            <tr className="skills-title">
-              <td><h3>HTML</h3></td>
-              <td><h3>CSS</h3></td>
-              <td><h3>JavaScript</h3></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Intermediate</h3></td>
-            </tr>
-            <tr className="skills-images">
-              <td><img src={typescript} alt="typescript" /></td>
-              <td><img src={sql} alt="sql" /></td>
-              <td></td>
-            </tr>
-            <tr className="skills-title">
-              <td><h3>TypeScript</h3></td>
-              <td><h3>SQL</h3></td>
-              <td></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Basic</h3></td>
-              <td><h3>Basic</h3></td>
-            </tr>
-          </table>
-          <table className="skills-table2">
-          <caption><h1><i class="fa-solid fa-gear"></i> Frameworks and Libraries</h1></caption>
-            <tr className="skills-images">
-              <td><img src={react} alt="react" /></td>
-              <td><img src={svelte} alt="svelte" /></td>
-              <td><img src={flutter} alt="flutter" /></td>
-            </tr>
-            <tr className="skills-title">
-              <td><h3>React</h3></td>
-              <td><h3>Svelte</h3></td>
-              <td><h3>Flutter</h3></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Basic</h3></td>
-            </tr>
-            <tr className="skills-images">
-              <td><img id="jest" src={jest} alt="jest" /></td>
-              <td><img src={junit} alt="git" /></td>
-              <td><img src={flask} alt="flask" /></td>
-            </tr>
-            <tr className="skills-title">
-              <td><h3>Jest</h3></td>
-              <td><h3>JUnit</h3></td>
-              <td><h3>Flask</h3></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Basic</h3></td>
-              <td><h3>Basic</h3></td>
-            </tr>
-            <tr>
-              <td><img src={nodejs} alt="nodejs" /></td>
-              <td><img src={express} alt="express" /></td>
-              <td></td>
-            </tr>
-            <tr>
-              <td><h3>Node.js</h3></td>
-              <td><h3>Express.js</h3></td>
-              <td></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Basic</h3></td>
-              <td><h3>Basic</h3></td>
-              <td><h3>Intermediate</h3></td>
-            </tr>
-          </table>
+          <div className="skills-table">
+            <h1><i className="fa-solid fa-code"></i> Programming Languages</h1>
+            <div className="skills-pairs">
+              <div className="skill-pair">
+                <img src={java} alt="java" />
+                <h3>Java</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={c} alt="c" />
+                <h3>C/C++</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={python} alt="python" />
+                <h3>Python</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={html} alt="html" />
+                <h3>HTML</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={css} alt="css" />
+                <h3>CSS</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={js} alt="js" />
+                <h3>JavaScript</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={typescript} alt="typescript" />
+                <h3>TypeScript</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={sql} alt="sql" />
+                <h3>SQL</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={java} alt="java" />
+                <h3>Java</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={c} alt="c" />
+                <h3>C/C++</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={python} alt="python" />
+                <h3>Python</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={html} alt="html" />
+                <h3>HTML</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={css} alt="css" />
+                <h3>CSS</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={js} alt="js" />
+                <h3>JavaScript</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={typescript} alt="typescript" />
+                <h3>TypeScript</h3>
+              </div>
+              <div className="skill-pair">
+                <img className='sql' src={sql} alt="sql" />
+                <h3>SQL</h3>
+              </div>
+            </div>
+          </div>
+          <div className="skills-table2">
+            <h1><i className="fa-solid fa-gear"></i> Frameworks and Libraries</h1>
+            <div className="skills-pairs">
+              <div className="skill-pair">
+                <img src={react} alt="react" />
+                <h3>React</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={svelte} alt="svelte" />
+                <h3>Svelte</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={flutter} alt="flutter" />
+                <h3>Flutter</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={jest} alt="jest" />
+                <h3>Jest</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={junit} alt="junit" />
+                <h3>JUnit</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={flask} alt="flask" />
+                <h3>Flask</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={nodejs} alt="nodejs" />
+                <h3>Node.js</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={express} alt="express" />
+                <h3>Express.js</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={pandas} alt="pandas" />
+                <h3>pandas</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={numpy} alt="numpy" />
+                <h3>NumPy</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={react} alt="react" />
+                <h3>React</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={svelte} alt="svelte" />
+                <h3>Svelte</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={flutter} alt="flutter" />
+                <h3>Flutter</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={jest} alt="jest" />
+                <h3>Jest</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={junit} alt="junit" />
+                <h3>JUnit</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={flask} alt="flask" />
+                <h3>Flask</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={nodejs} alt="nodejs" />
+                <h3>Node.js</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={express} alt="express" />
+                <h3>Express.js</h3>
+              </div>
+            </div>
+          </div>
+          <div className="skills-table3">
+            <h1><i className="fa fa-wrench"></i> Software Tools</h1>
+            <div className="skills-pairs">
+              <div className="skill-pair">
+                <img src={aws} alt="aws" />
+                <h3>AWS</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={docker} alt="docker" />
+                <h3>Docker</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={linux} alt="linux" />
+                <h3>Linux/Unix</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={git} alt="git" />
+                <h3>Git</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={graphql} alt="graphql" />
+                <h3>GraphQL</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={mongodb} alt="mongodb" />
+                <h3>MongoDB</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={planetscale} alt="planetscale" />
+                <h3>PlanetScale</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={aws} alt="aws" />
+                <h3>AWS</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={docker} alt="docker" />
+                <h3>Docker</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={linux} alt="linux" />
+                <h3>Linux/Unix</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={git} alt="git" />
+                <h3>Git</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={graphql} alt="graphql" />
+                <h3>GraphQL</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={mongodb} alt="mongodb" />
+                <h3>MongoDB</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={planetscale} alt="planetscale" />
+                <h3>PlanetScale</h3>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-      <div className="lasttable">
-          <table className="skills-table3">
-          <caption><h1><i class="fa fa-wrench"></i> Software Tools</h1></caption>
-            <tr>
-              <td><img src={aws} alt="aws" /></td>
-              <td><img src={linux} alt="linux" /></td>
-              <td><img src={git} alt="git" /></td>
-            </tr>
-            <tr>
-              <td><h3>AWS</h3></td>
-              <td><h3>Linux/Unix</h3></td>
-              <td><h3>Git</h3></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Basic</h3></td>
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Intermediate</h3></td>
-            </tr>
-            <tr>
-              <td><img src={graphql} alt="graphql" /></td>
-              <td><img src={mongodb} alt="mongodb" /></td>
-              <td><img src={planetscale} alt="planetscale" /></td>
-            </tr>
-            <tr>
-              <td><h3>GraphQL</h3></td>
-              <td><h3>MongoDB</h3></td>
-              <td><h3>PlanetScale</h3></td>
-            </tr>
-            <tr className="skills-subtitle">
-              <td><h3>Basic</h3></td>
-              <td><h3>Intermediate</h3></td>
-              <td><h3>Intermediate</h3></td>
-            </tr>
-          </table>
-        </div>
+
       <Parallax className="parallax1" strength={600} bgImage={space1} />
       <div className="strengths">
         <h2 className="iam">I Am...</h2>
@@ -207,7 +287,7 @@ const Home = () => {
         </div>
         <div className="about-me-text">
           <h1>A Little More About <br /> Myself.</h1>
-          <p>As a computer engineering student at UBC, I strive to be a well-rounded, innovative individual who is always open to learning and prepared to face difficult challenges head on. Balancing a variety of extracurriculars while achieving academic excellence has made me eager to try new experiences and taught me to manage my time wisely. Some of my hobbies include programming, playing basketball, working out, listening to music and watching the latest movie or tv show. <br /> <br /> My love for coding started with Waterloo’s CS Circles tutorials on Python and since then it has become my passion. Currently I am in UBC Launch Pad, a software design team that works in teams to build innovative apps. My aspiration is to utilize technology to enhance the well-being of humanity, with the intention of creating a legacy that yields a positive, lasting influence on society.</p>
+          <p>As a computer engineering student at UBC, I strive to be a well-rounded, innovative individual who is always open to learning and prepared to face difficult challenges head on. Balancing a variety of extracurriculars while achieving academic excellence has made me eager to try new experiences and taught me to manage my time wisely. Some of my hobbies include programming, playing basketball, working out, listening to music and watching the latest movie or tv show. <br /> <br /> My love for coding started with Waterloo’s CS Circles tutorials on Python and since then it has become my passion. My aspiration is to utilize technology to enhance the well-being of humanity, with the intention of creating a legacy that yields a positive, lasting influence on society.</p>
         </div>
       </div>
       <Parallax className="parallax1" strength={600} bgImage={space1} />
