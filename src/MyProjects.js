@@ -10,7 +10,7 @@ import monsterrpggame from './images/monsterrpggame.png';
 import ponggame from './images/ponggame.gif';
 import gameoflife from './images/gameoflife.gif';
 import bankaccount from './images/bankaccount.png';
-import louisvuitton from './images/louisvuitton.png';
+//import louisvuitton from './images/louisvuitton.png';
 import cosmicgateway from './images/cosmicgateway.png';
 import de1 from './images/de1.png';
 import spotify from './images/spotify.png';

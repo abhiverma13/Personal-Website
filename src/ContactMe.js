@@ -1,79 +1,79 @@
-import { useEffect, useRef, useState } from "react";
-import { useHistory } from 'react-router-dom';
-import emailjs from '@emailjs/browser';
+import { useEffect } from "react";
+//import { useHistory } from 'react-router-dom';
+//import emailjs from '@emailjs/browser';
 
 const ContactMe = () => {
   useEffect(() => {
     document.title = "Abhi Verma - Contact Me";
   }, []);
 
-  const form = useRef();
+  // const form = useRef();
 
-  const history = useHistory();
+  // const history = useHistory();
 
-  const sendEmail = (e) => {
-    const message = e.target.elements.message.value;
-    const name = e.target.elements.user_name.value;
-    if (!isValidEmail(email)) {
-      e.preventDefault();
-      setError('Email is invalid');
-    }
-    else if(!isValidName(name)) {
-      e.preventDefault();
-      setError2('Name is invalid');
-    }
-    else if(!isValidMessage(message)) {
-      e.preventDefault();
-      setError3('Message is invalid');
-    }
-    else {
-      e.preventDefault();
-      emailjs.sendForm('service_oyem80q', 'template_yqi8u61', form.current, '_2x4APNGu3ktb-okL')
-      .then((result) => {
-          console.log(result.text);
-          history.replace('/contactme');
-          document.getElementById("user_name").value = "";
-          document.getElementById("user_email").value = "";
-          document.getElementById("message").value = "";
-          setSent('Message sent');
-      }, (error) => {
-          console.log(error.text);
-      })
-    }
-  };
+  // const sendEmail = (e) => {
+  //   const message = e.target.elements.message.value;
+  //   const name = e.target.elements.user_name.value;
+  //   if (!isValidEmail(email)) {
+  //     e.preventDefault();
+  //     setError('Email is invalid');
+  //   }
+  //   else if(!isValidName(name)) {
+  //     e.preventDefault();
+  //     setError2('Name is invalid');
+  //   }
+  //   else if(!isValidMessage(message)) {
+  //     e.preventDefault();
+  //     setError3('Message is invalid');
+  //   }
+  //   else {
+  //     e.preventDefault();
+  //     emailjs.sendForm('service_oyem80q', 'template_yqi8u61', form.current, '_2x4APNGu3ktb-okL')
+  //     .then((result) => {
+  //         console.log(result.text);
+  //         history.replace('/contactme');
+  //         document.getElementById("user_name").value = "";
+  //         document.getElementById("user_email").value = "";
+  //         document.getElementById("message").value = "";
+  //         setSent('Message sent');
+  //     }, (error) => {
+  //         console.log(error.text);
+  //     })
+  //   }
+  // };
 
-  const [email, setEmail] = useState('');
-  const [sent, setSent] = useState(null);
-  const [error, setError] = useState(null);
-  const [error2, setError2] = useState(null);
-  const [error3, setError3] = useState(null);
+  // const [email, setEmail] = useState('');
+  // const [sent, setSent] = useState(null);
+  // const [error, setError] = useState(null);
+  // const [error2, setError2] = useState(null);
+  // const [error3, setError3] = useState(null);
 
-  function isValidName(name) {
-    return name.trim() !== '';
-  }
+  // function isValidName(name) {
+  //   return name.trim() !== '';
+  // }
 
-  function isValidEmail(email) {
-    return /\S+@\S+\.\S+/.test(email);
-  }
+  // function isValidEmail(email) {
+  //   return /\S+@\S+\.\S+/.test(email);
+  // }
 
-  function isValidMessage(message) {
-    return message.trim() !== '';
-  }
+  // function isValidMessage(message) {
+  //   return message.trim() !== '';
+  // }
 
-  const handleChange = event => {
-    if (!isValidEmail(event.target.value)) {
-      if(event.target.value==='') {
-        setError(null);
-      }
-      else {
-        setError('Email is invalid');
-      }
-    } else {
-      setError(null);
-    }
+  // const handleChange = event => {
+  //   if (!isValidEmail(event.target.value)) {
+  //     if(event.target.value==='') {
+  //       setError(null);
+  //     }
+  //     else {
+  //       setError('Email is invalid');
+  //     }
+  //   } else {
+  //     setError(null);
+  //   }
 
-    setEmail(event.target.value);
-  };
+  //   setEmail(event.target.value);
+  // };
 
   return (
     <div className="contactme">
