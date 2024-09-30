@@ -165,11 +165,46 @@
   padding-bottom: 20px;
 }
 
-@media (max-width: 1440px) {
+@media (max-width: 800px) {
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-200%); } /* Move by half to enable smooth transition */
+  }
   
+  @keyframes scroll-right {
+    0% { transform: translateX(-200%); }
+    100% { transform: translateX(0%); } /* Move by half to enable smooth transition */
+  }
+
+  .skills-pairs {
+    display: flex;
+    animation: scroll-left 15s linear infinite;
+  }
+  
+  .skills-table2 .skills-pairs {
+    animation: scroll-right 15s linear infinite;
+  }
+  
+  .skills-table3 .skills-pairs {
+    animation: scroll-left 15s linear infinite;
+  }
+
+  .skill-pair {
+    margin: 20px 20px;
+  }
 }
 
-
+@media (max-width: 500px) {
+  @keyframes scroll-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-300%); } /* Move by half to enable smooth transition */
+  }
+  
+  @keyframes scroll-right {
+    0% { transform: translateX(-400%); }
+    100% { transform: translateX(0%); } /* Move by half to enable smooth transition */
+  }
+}
 
 /*strengths*/
 .strengths {
