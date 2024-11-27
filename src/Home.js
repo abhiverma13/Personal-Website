@@ -85,6 +85,10 @@ const Home = () => {
                 <h3>SQL</h3>
               </div>
               <div className="skill-pair">
+                <img src={graphql} alt="graphql" />
+                <h3>GraphQL</h3>
+              </div>
+              <div className="skill-pair">
                 <img src={java} alt="java" />
                 <h3>Java</h3>
               </div>
@@ -115,6 +119,10 @@ const Home = () => {
               <div className="skill-pair">
                 <img className='sql' src={sql} alt="sql" />
                 <h3>SQL</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={graphql} alt="graphql" />
+                <h3>GraphQL</h3>
               </div>
             </div>
           </div>
@@ -215,10 +223,6 @@ const Home = () => {
                 <h3>Git</h3>
               </div>
               <div className="skill-pair">
-                <img src={graphql} alt="graphql" />
-                <h3>GraphQL</h3>
-              </div>
-              <div className="skill-pair">
                 <img src={mongodb} alt="mongodb" />
                 <h3>MongoDB</h3>
               </div>
@@ -241,10 +245,6 @@ const Home = () => {
               <div className="skill-pair">
                 <img src={git} alt="git" />
                 <h3>Git</h3>
-              </div>
-              <div className="skill-pair">
-                <img src={graphql} alt="graphql" />
-                <h3>GraphQL</h3>
               </div>
               <div className="skill-pair">
                 <img src={mongodb} alt="mongodb" />
