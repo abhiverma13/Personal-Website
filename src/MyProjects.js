@@ -44,19 +44,19 @@ const MyProjects = () => {
       </ProjectRight>
       <hr />
       <ProjectLeft className="spotify-app" 
-      title= "Spotify Playlist Generator"
+      title= "Spotify VibeCraftr"
       description="Frustrated with my gigantic playlist of 500+ songs, I decided to make an app to filter songs out of playlists based on mood such as sad or party. Knowing people like my dad struggle with finding new songs, I also added the feature to find similar songs by inputting seed tracks. This is a Python-based web application developed with Flask and integrated with the Spotify API, offering a user-friendly interface for playlist management and music exploration. Users can authenticate with their Spotify credentials, explore existing playlists, create new ones, and add tracks to both new and existing playlists."
       instructions="Clicking on the logo will take you to my GitHub repository where you can download the code and follow the instructions in the README.md file to use the app."
       image={spotify}
-      link="https://github.com/abhiverma13/Spotify-Playlist-Generator">
+      link="https://github.com/abhiverma13/Spotify-VibeCraftr">
       </ProjectLeft>
       <Parallax className="parallax2" strength={600} bgImage={space2} />
       <ProjectLeft className="movie-review-app" 
-      title= "Movie Review App"
+      title= "ReelViews"
       description="I am an avid movie watcher and was curious to see how apps like Netflix display such a wide range of movies, which led to this project. This full-stack web application uses The Movie Database API to display the latest movies on the homepage and search for any movie in order to post reviews online. In addition to using TMDB API, I created my own RESTful API to manage the retrieval and storage of reviews for each movie. The front-end of this application was made using HTML, CSS, and JavaScript while the back-end uses Express.js and MongoDB."
       instructions="Clicking on the logo to will take you to my GitHub repository where you can check out what the app looks like as well as the source code."
       image={moviereviewapp}
-      link="https://github.com/abhiverma13/Movie-Review-App">
+      link="https://github.com/abhiverma13/ReelViews">
       </ProjectLeft>
       <hr />
       <ProjectRight className="epilog" 
