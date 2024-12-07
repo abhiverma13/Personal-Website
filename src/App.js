@@ -19,15 +19,15 @@ function App() {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/myprojects">
+            <Route path="/projects*">
               <MyProjects />
             </Route>
-            <Route path="/experience">
+            <Route path="/experience*">
               <Experience />
             </Route>
-            <Route path="/contactme">
+            {/* <Route path="/contactme">
               <ContactMe />
-            </Route>
+            </Route> */}
             <Route path="*">
               <NotFound />
             </Route>

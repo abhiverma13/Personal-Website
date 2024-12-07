@@ -30,7 +30,7 @@ import planetscale from './images/planetscale.jpg';
 import learner from './images/learner.png'
 import solver from './images/solver.png';
 import leader from './images/leader.png';
-import resume from './Resume.pdf';
+import msOffice from './images/ms-office.png';
 
 const Home = () => {
 
@@ -231,6 +231,10 @@ const Home = () => {
                 <h3>PlanetScale</h3>
               </div>
               <div className="skill-pair">
+                <img src={msOffice} alt="msoffice" />
+                <h3>Microsoft Office</h3>
+              </div>
+              <div className="skill-pair">
                 <img src={aws} alt="aws" />
                 <h3>AWS</h3>
               </div>
@@ -253,6 +257,10 @@ const Home = () => {
               <div className="skill-pair">
                 <img src={planetscale} alt="planetscale" />
                 <h3>PlanetScale</h3>
+              </div>
+              <div className="skill-pair">
+                <img src={msOffice} alt="msoffice" />
+                <h3>Microsoft Office</h3>
               </div>
             </div>
           </div>
@@ -283,7 +291,6 @@ const Home = () => {
       <div className="about-me">
         <div className="my-image">
           <img src={myimage} alt="myimage" />
-          <button onClick = {() => {window.open(resume, "_blank")}}>MY RESUME</button>
         </div>
         <div className="about-me-text">
           <h1>A Little More About <br /> Myself.</h1>

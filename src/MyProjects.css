@@ -127,6 +127,9 @@ hr{
 }
 
 /*specifics*/
+.quantum img {
+  height: 30vh;
+}
 .facultyCV img {
   height: 30vh;
 }
@@ -219,6 +222,9 @@ hr{
   .louisvuitton img {
     height: 20vh;
   }
+  .quantum img {
+    height: 20vh;
+  }
 }
 @media (max-width: 450px) {
   .facultyCV img {
@@ -258,6 +264,9 @@ hr{
     height: 15vh;
   }
   .louisvuitton img {
+    height: 15vh;
+  }
+  .quantum img {
     height: 15vh;
   }
 }

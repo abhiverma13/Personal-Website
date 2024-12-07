@@ -1,6 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import logo from './images/logo.png'
 import { useState } from 'react';
+import resume from './Resume.pdf';
 
 const Navbar = () => {
   const [fix, setFix] = useState(false);
@@ -37,13 +38,13 @@ const Navbar = () => {
           <NavLink to="/" exact={true} onClick={handleClickTwo}>HOME</NavLink>
         </li>
         <li className="link">
-          <NavLink to="/myprojects" onClick={handleClickTwo}>MY PROJECTS</NavLink>
+          <NavLink to="/projects" onClick={handleClickTwo}>PROJECTS</NavLink>
         </li>
         <li className="link">
           <NavLink to="/experience" onClick={handleClickTwo}>EXPERIENCE</NavLink>
         </li>
         <li className="link">
-          <NavLink to="/contactme" onClick={handleClickTwo}>CONTACT ME</NavLink>
+          <button onClick = {() => {window.open(resume, "_blank")}}>RESUME</button>
         </li>
       </ul>
     </nav>
