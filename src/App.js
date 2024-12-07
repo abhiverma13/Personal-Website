@@ -3,7 +3,7 @@ import Navbar from './Navbar';
 import Home from './Home';
 import MyProjects from './MyProjects';
 import Experience from './Experience';
-import ContactMe from './ContactMe';
+//import ContactMe from './ContactMe';
 import NotFound from './NotFound';
 import Footer from './Footer';
 import ScrollToTop from './ScrollToTop'
