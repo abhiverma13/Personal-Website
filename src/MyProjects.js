@@ -35,6 +35,7 @@ const MyProjects = () => {
       image={quantum}
       link="https://github.com/UBC-CIC/Quantum-AI">
       </ProjectRight>
+      <hr />
       <ProjectLeft className="facultyCV" 
       title= "Faculty CV"
       description="This project involved engineering an AWS and React-powered platform for the UBC Faculty of Medicine to streamline the creation of Curriculum Vitae (CVs), significantly enhancing operational efficiency across 19 departments, 3 schools, and 25 research centers. By integrating external data sources and datasets, the platform developed robust pipelines to fetch, clean, and store raw data from APIs and CSV files uploaded to Amazon S3 buckets into a relational database (RDS PostgreSQL). Additionally, the project automated the CV generation process using a Lambda function hosted in a Docker container, efficiently converting LaTeX files into PDFs. This comprehensive solution alleviated the administrative burden on faculty members, allowing them to focus more on their research and clinical duties while ensuring standardized and accessible CVs."
